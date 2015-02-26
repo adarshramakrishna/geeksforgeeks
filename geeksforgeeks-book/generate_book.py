@@ -1,10 +1,10 @@
 """
-generate a book
+generate a book. takes two arguments: book name and version number.
 """
 
 import sys
-from subprocess import call
 import glob
+from subprocess import call
 
 from clean import clean_html_files
 
@@ -28,7 +28,7 @@ def generate(book, version):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print "this program takes one argument"
+        print "this program takes two arguments"
         sys.exit()
     book = sys.argv[1]
     version = sys.argv[2]

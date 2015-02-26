@@ -1,8 +1,8 @@
-# Geeksforgeeks As Books
+# Geeksforgeeks/leetcode Articles As Books
 
 ![Read books](http://rlv.zcache.com/funny_i_need_more_books_gift_postcards-r02cd503cbd784d0e934c3af02da0fea3_vgbaq_8byvr_512.jpg)
 
-Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] on your
+Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] or [leetcodeon](http://leetcode.com/) offline right on your
 iPad? Or on your Kindle/Kindle App? Well, now you have it. Look under the directory `goodies` and do the world some good with your algorithmic prowess ;)
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
@@ -37,14 +37,14 @@ Want to create a book from the `geeksforgeeks` site yourself? No problem. But yo
 
 ### 1. Scrapy
 
-[Scrapy][2] is used to download webpages from `geeksforgeeks`. It makes it super easy to do so with its rules.
+[Scrapy][2] is used to download webpages from `geeksforgeeks` and `leetcode`. It makes it super easy to do so with its rules.
 
 Install it with `pip install scrapy`
 
 ### 2. Boilerpipy
 
 So you have the html files locally. But those html files have many other stuff you don't want. You only want... goodies.
-No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with.
+No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with. However, I've found that it also removes the title of an article sometimes.
 
 
 ### 3. Pandoc
@@ -53,7 +53,7 @@ No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff l
 
 ### 4. Kindlegen
 
-You'll need [kindlegen][4] to generate `mobi` files so you can read on your beloved Kindle or Kindle App. Download it from Amazon site and install.
+You'll need [kindlegen][4] to generate `mobi` files so you can read on your beloved Kindle or Kindle App. Download it from the linked Amazon webpage and install.
 
 You just need to use `kindlegen awesome.epub` and it'll give you a file called `awesome.mobi`. Awesome, right?
 
@@ -67,15 +67,15 @@ For example, running `scrapy crawl geeksforgeeks -a category=tag -a name=pattern
 
 ### 2. Generate a book  
 
-Following the example in 1, now go into the `makethebook` subdirectory and you should be able to find a directory called `pattern-searching`. Now run `python generate_book.py pattern-searching`. It will first clean the html files, concatenate the cleaned files into one, then use `pandoc` to create an epub file from the markdown file. In the end a mobi file is created using `kindlegen`.
+Following the example in 1, now go into the `geeksforgeeks-books` subdirectory and you should be able to find a directory called `pattern-searching`. Now run `python generate_book.py pattern-searching`. It will first clean the html files, concatenate the cleaned files into one, then use `pandoc` to create an epub file from the markdown file. In the end a mobi file is created using `kindlegen`.
 
 Yay! Done!
 
 ## To Do
 
-### Fix the encoding(done)
+### Style the books
 
-The encoding isn't well handled yet. You'll spot some gibberish(mostly caused by ‘ and ’) once in a while. While it won't affect your understanding much, it's quite annoying.
+Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` tag, for instance, will style the code of the `epub` books.
 
 ## Contribute
 
@@ -95,8 +95,12 @@ You can also make/submit cover images for the books so `pandoc` can use them whe
 
 ## License
 
+The content in the books *doesn't* belong to me. I created the books so other people and me can read them offline on iPad or Kindle, and for a better reading experience.
+
 The content on Geeksforgeeks is licensed under Creative Commons
 Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7]
+
+The content on `leetcode` belongs to the site.
 
 The code in this project is licensed under Apache License, Version 2.0. See the
 license [here][8]

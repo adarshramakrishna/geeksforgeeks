@@ -1,15 +1,18 @@
-import glob
-from subprocess import call
+"""
+clean local html files via boilerpipy. the tool removes the title of an article occasionally.
+"""
 
-#!/usr/bin/env python
+import glob
 import sys
 import codecs
 import os
 import logging
-
 import HTMLParser
-import lxml.html as html
+from subprocess import call
+
 import lxml.etree
+import lxml.html as html
+
 from boilerpipy import (Extractor, isvalidhtml)
 
 
@@ -46,7 +49,6 @@ def clean(file_name, directory="."):
     post_content_doc.append(lxml.etree.XML(source_link))
     basename = os.path.basename(file_name)
     cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
-    #out = html.tostring(head_doc) + html.tostring(body_doc)
     result = html.tostring(body_doc)
     with codecs.open(directory + cleaned_file, 'w', 'utf-8') as cleaned_file_handle:
         cleaned_file_handle.write(result)

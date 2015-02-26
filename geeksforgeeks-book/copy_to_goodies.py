@@ -1,3 +1,6 @@
+"""
+copy books of a version to directory goodies
+"""
 import sys
 import glob
 from subprocess import call
