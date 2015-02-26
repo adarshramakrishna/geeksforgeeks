@@ -2,7 +2,7 @@
 
 ![Read books](http://rlv.zcache.com/funny_i_need_more_books_gift_postcards-r02cd503cbd784d0e934c3af02da0fea3_vgbaq_8byvr_512.jpg)
 
-Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] or [leetcodeon](http://leetcode.com/) offline right on your
+Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] or [leetcode.com](http://leetcode.com/) offline right on your
 iPad? Or on your Kindle/Kindle App? Well, now you have it. Look under the directory `goodies` and do the world some good with your algorithmic prowess ;)
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
