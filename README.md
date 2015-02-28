@@ -1,11 +1,12 @@
 # Geeksforgeeks/leetcode Articles As Books
 
-![Read books](http://rlv.zcache.com/funny_i_need_more_books_gift_postcards-r02cd503cbd784d0e934c3af02da0fea3_vgbaq_8byvr_512.jpg)
-
 Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] or [leetcode.com](http://leetcode.com/) offline right on your
-iPad? Or on your Kindle/Kindle App? Well, now you have it. Look under the directory `goodies` and do the world some good with your algorithmic prowess ;)
+iPad? Or on your Kindle/Kindle App? Well, now you have it. Look under the directory `goodies` and do the world some good with your algorithmic prowess 😄
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
+
+![Book covers](https://s-media-cache-ak0.pinimg.com/originals/25/15/f5/2515f556de2b199d4af8a8aacdebc7c3.jpg)
+Book covers are made of word clouds based on the book content using [word_cloud](https://github.com/amueller/word_cloud)  
 
 ![On Ipad](https://s-media-cache-ak0.pinimg.com/originals/1d/28/d3/1d28d3e3148d2c91d22e837ace64c0ce.jpg)
 
@@ -13,22 +14,7 @@ Here's how the books look like in the iBooks App and Kindle App on my iPad. Kind
 
 ## Books
 
-Right now we have those books under `goodies`
-
-- **Tree** Source: [here](http://www.geeksforgeeks.org/category/tree/)
-- **Graph** Source: [here](http://www.geeksforgeeks.org/category/graph/)
-- **Array** Source: [here](http://www.geeksforgeeks.org/category/c-arrays/)
-- **Recursion** Source: [here](http://www.geeksforgeeks.org/tag/recursion/)
-- **Backtracking** Source: [here](http://www.geeksforgeeks.org/tag/backtracking/)
-- **Linked List** Source: [here](http://www.geeksforgeeks.org/category/linked-list/)
-- **Math Problems** Source: [here](http://www.geeksforgeeks.org/tag/MathematicalAlgo/)
-- **Greedy Algorithm** Source: [here](http://www.geeksforgeeks.org/tag/Greedy-Algorithm/)
-- **Pattern Matching** Source: [here](http://www.geeksforgeeks.org/tag/pattern-searching/)
-- **Divide and Conquer** Source: [here](http://www.geeksforgeeks.org/tag/divide-and-conquer/)
-- **Dynamic Programming** Source: [here](http://www.geeksforgeeks.org/tag/dynamic-programming/)
-- **Advanced Data Structure** Source: [here](http://www.geeksforgeeks.org/tag/advance-data-structures/)
-
-
+Right now we have 16 books under `goodies/geeksforgeeks` and one book under `goodies/leetcode`
 
 ## Tools
 
@@ -87,17 +73,17 @@ You can contribute in many ways. Besides contributing code to this project. You 
 
 Every tag or category on `geeksforgeeks` can be turned into a book. So you are welcome to add more books.
 
-### Styles and Cover Images
+### Styles
 
-The style for generating `epub` books is under `styles` subdirectory. Welcome to submit your style sheets.
+The style for generating `epub` books is under `styles` subdirectory. `epub` books are styled via `css`. Welcome to submit your stylesheets.
 
-You can also make/submit cover images for the books so `pandoc` can use them when generating `epub` files. Right now they don't have any.
+
 
 ## License
 
 The content in the books *doesn't* belong to me. I created the books so other people and me can read them offline on iPad or Kindle, and for a better reading experience.
 
-The content on Geeksforgeeks is licensed under Creative Commons
+The content on geeksforgeeks.org is licensed under Creative Commons
 Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7]
 
 The content on `leetcode` belongs to the site.
