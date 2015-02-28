@@ -24,12 +24,16 @@ def generate_cover(book_name, version):
         call("pandoc " + epub_file + " -t plain -o " + plain_text, shell=True)
 
     text = open(plain_text).read()
-
+    fig = plt.figure(frameon=False)
+    fig.set_size_inches(4, 6)
+    ax = plt.Axes(fig, [0., 0., 1., 1.])
+    ax.set_axis_off()
+    fig.add_axes(ax)
     wordcloud = WordCloud(font_path='/Users/jing/Library/Fonts/Verdana.ttf', width=800, height=1200, stopwords=stopwords).generate(text)
-    plt.imshow(wordcloud)
+    plt.imshow(wordcloud, aspect='normal')
 
-    plt.axis("off")
-    plt.savefig(image_name, dpi=300, bbox_inches='tight')
+    #plt.axis("off")
+    plt.savefig(image_name, dpi=300)
 
 
 if __name__ == "__main__":
