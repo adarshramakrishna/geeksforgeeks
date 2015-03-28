@@ -23,7 +23,9 @@ def generate(book, version):
     generate_cover(book[:-1], version[1:])
     print "generating", epub_file, "this might take a while..."
     call(['pandoc', '-o', epub_file, html_file,
-        '--epub-metadata='+book+'metadata.xml', "--toc", "--toc-depth=2", "--epub-stylesheet=../styles/leetcode.css", "-f", "html-native_divs"])
+        '--epub-metadata='+book+'metadata.xml', "--toc", "--toc-depth=2",
+        "--epub-stylesheet=../styles/leetcode.css", "-f", "html-native_divs",
+        "--epub-cover-image="+cover_image])
     print "generating", book + version + book[:-1] + ".mobi", "..."
     call(['kindlegen', epub_file])
 
