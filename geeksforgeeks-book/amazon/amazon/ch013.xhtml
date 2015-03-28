@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 3</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-3" class="section level1">
+<h1>Amazon Interview | Set 3</h1>
+<p>Please find the details of my Amazon interviews below. <span id="more-23053"></span></p>
+<p><strong>Date of Interviews:</strong> 26th July 2012</p>
+<p><strong>No of Rounds:</strong> 1 online exam + 4 PI</p>
+<p><strong>Type of Interviews:</strong> Campus Interview for freshers</p>
+<p><br /> <strong>Online test(Time): 90 Minutes</strong></p>
+<p><em>20 Objective Questions:</em> Aptitude and basic C objective problems.</p>
+<p><em>2 Subjective Questions:</em><br /> I. Â  Â  Â  Â  Given a linked list containing character in each node, segregate its nodes in such a way that all nodes containing a vowel are moved to the end of the linked list. We will have to maintain the order.<br /> II. Â  Â  Â  Parenthesis checker.</p>
+<p><br /> <strong>Interview Round 1(50 mins)</strong></p>
+<p><strong>Question 1:</strong> You are given two linked lists whose nodes contain a digit as data member. Both lists represent a number. You have to add them and return the resultant list.<br /> Input: 9-&gt;9-&gt;3-&gt;4-&gt;5 and 8-&gt;9-&gt;1 (represent 99345 and 891)<br /> Output: 1-&gt;0-&gt;0-&gt;2-&gt;3-&gt;6<br /> <em>My Solution:</em> Reverse the linked lists. Create the new sum list which is reversed. Finally reverse the resultant list.</p>
+<p><strong>Question 2:</strong> Interviewer asked to solve the above question without changing the original lists.<br /> <em>My Solution:</em> Count number of nodes in both lists. If equal then simply add two lists recursively. If not then advance a temp ptr which is a pointer to head of larger list by diff of nodes and then add the list pointed by temp and list 2. Make sure to keep track of carry. Add recursively. Propagate the carry in remaining elements of larger list. Was asked to code. Coded it.</p>
+<p><br /> <strong>Interview Round 2(60 mins)</strong></p>
+<p><strong>Question 1:</strong> Delete nth node from end of a linked list in a single scan.</p>
+<p><strong>Question 2:</strong> In a linked list, in addition to the next ptr, a random ptr is also present. Clone the linked list.<br /> Did it in O(n) but by modifying the linked list and then restoring it. Was asked to do it without making any modifications in the original list. Did that in O(n^2)</p>
+<p><strong>Question 3:</strong> Two nodes of a BST are given. Print the path from 1st node to the 2nd node. You are also provided the parent pointers in addition to normal left and right pointers.</p>
+<p><br /> <strong>Interview Round 3(1 hour)</strong></p>
+<p><strong>Question 1:</strong> An array of n integers is there in which the range of elements is n, i.e., the difference between maximum and minimum number is n. Find the repeating numbers.</p>
+<p><strong>Question 2:</strong> An extension of Question 1. Was asked to find number of times each number is repeated.</p>
+<p><strong>Question 3:</strong> There are n frames of m data element each. The data element in each frame is arranged in increasing order. You are provided m*n space in which you have to arrange all data in increasing order.</p>
+<p>My 1st solution was to use merge sort. He modified the question as only O(n) space is there and you need to send data in increasing order as fast as you can.<br /> My 2nd solution was to use min heap and construct it with the 1st element of all n frames. Min heap also contains extra field which signifies the frame number of data elements. This data structure can do the needful.</p>
+<p><br /> <strong>Interview Round 4(1 hour)</strong></p>
+<p><strong>Question 1:</strong> Replace each element of an array with its greatest next integer in O(n).<br /> I couldnâ€™t do it. I tried but it didn’t click. Not expected when you are in your last round.</p>
+<p><strong>Question 2:</strong> Reverse every k nodes of a linked list.</p>
+<p>Well did that but was not finally selectedâ€¦â€¦. <img src="media/file6.gif" alt=":(" /></p>
+<p><br /> This article is compiled by <strong>Vinay Khetan</strong>. We will be soon publishing Vinay’s Yahoo and Microsoft interviews as separate posts. Vinay was selected in Microsoft. Many Many congratulations to Vinay for his selection.</p>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-11" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-3/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-3/</a></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>
+

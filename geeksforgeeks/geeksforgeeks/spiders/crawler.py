@@ -20,7 +20,7 @@ class GFGSpider(CrawlSpider):
     )
     def __init__(self, category='tag', name='dynamic-programming', *args, **kwargs):
         super(GFGSpider, self).__init__(*args, **kwargs)
-        self.dest = "../geeksforgeeks-books/" + name + "/"
+        self.dest = "../geeksforgeeks-book/" + name + "/"
         self.start_urls = ['http://www.geeksforgeeks.org/' + category + '/' + name]
         self.doc_name = name
 

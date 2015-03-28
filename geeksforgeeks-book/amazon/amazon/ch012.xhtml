@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 28</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-28" class="section level1">
+<h1>Amazon Interview | Set 28</h1>
+<p>Hi, I was recently interviewed for SDE1 position for Amazon, Hyderabad but was not able to make it through. Although I wasn’t selected but it was a good experience and GeeksforGeeks has been very helpful. <span id="more-117539"></span></p>
+<p>Following were interview questions-<br /> I had one written round and one telephonic round before 4 in-face interviews in Hyderabad.</p>
+<p><strong>Round 1 (Written):</strong><br /> There were four questions which had to be submitted in a time span of two hours. Questions were:<br /> 1. Given a character string, display the characters that appear more than once in that string.<br /> 2. Rotate a matrix 90 degrees to right<br /> 3. Convert a BST to DLL.<br /> 4. Find kth largest element in a given BST.</p>
+<p><strong>Round 2 (Telephonic):</strong><br /> 1. First question was to get two numbers fro a BST whose sum was equal to k. I answered it using a preorder traversal to get a sorted array and than starting two index from both ends to find if two elements with sum as k exist or not. He than asked if it can be solved without using an array or extra space. I tried solving it by traversing from two ends of the tree in preoder and reverse preorder fashion and it took some time to code. Dry run of the code seemed to be right but I wasnt sure. Anyways the best way of not using extra space can be to convert tree to DLL (in space) and use the same technique as used on array.</p>
+<p>2. For second question I was asked if I had heard the question before or not. Question was that a a matrix is given with its rows and columns sorted and an element is to be searched in that matrix. I had heard the question before but had not solved it and told the same to the interviewer. After thinking for a while I could get an algo by starting at the rightmost element of the first row. If element if bigger we move down or else we move right. The solution was fine but he doubted that I had solved it earlier.</p>
+<p>3. He asked to write a program of finding the square root of a number without using library functions. I had done it before and told him the same. I used Newton-rapson method to get the solution but he wanted it through something on the lines of binary search. I almost got the solution but may be I was running out of time so he dropped the question there only and asked me to dictate the solution of 2nd problem.</p>
+<p>Two days later I got a call that I have cleared my telephonic round and have to be present in Hyderabad for further rounds(four). Arrangements done my Amazon and I appeared for the further rounds on 27/4/2013 in their Hyderabad office.</p>
+<p><strong>Onsite:</strong><br /> <strong>Round 1 (Technical):</strong><br /> 1. First question was to find the vertical sum of a binary tree. I told him the solution using and array/hash. Whenever we move left we decremented the index while moving right we increment the index. The solution looked fine to him but he wasn’t very comfortable with negative indexing. So he asked for another solution using doubly linked list. Initially I wasn’t getting it but when he gave some hint I was bale to solve it but it took some time to cover edge cases. With the final solution he looked convinced.</p>
+<p>2. Next question was to have Stack operations of Push, Pop, and FindMax in O(1) time. I started doing this using only one index of max variable but than I realised I needed max index at all levels so gave him a solution using two stacks. One having the element and the other having the corresponding max index. He looked convinced with the solution.</p>
+<p><strong>Round 2 (Technical):</strong><br /> 1. In second round there were two interviewers and coincidentally one of them was the same guy who took my telephonic interview. First question was related on how to chose the ‘related’ items list whenever a product is displayed on Amazon website. the problem was to find the least related product for a given product. Initially I answered using n-ary tree but told him that we would have duplicate entries. He asked for optimized solution so I suggested using adjancy-list nut finally realized that it can be solved using graphs. They were convinced and asked to code. I solved it using a Queue so while traversing a matrix we pushed in the elements in the queue with their level of relation. They were convinced with the solution.</p>
+<p>2. Second question was to delete an element from doubly linked list. I solved it but missed out on and edge case where the element to be deleted is not present in the list. I added that check later.</p>
+<p>3. Third was that for a given BST invert the signs of the elements and finally have a new BST. It clicked my mind that after sign inversion it will be a mirror tree and gave the solution for the same.<br /> Till this time feedback looked fine.</p>
+<p><strong>Round 3 (Technical-Managerial):</strong><br /> 1. The next interviewer was senior guy and asked me about my work. Explained him in detail.</p>
+<p>2. Later he asked me that for a given binary tree having three address fields i.e. left, right and bfs successor, left and right fields are filled and the successor field is to be filled. I solved it using level order traversal with a queue but he wanted solution without using extra space. I was taking time to solve it when he gave hint about keeping track of the parent. After this hint I was able to solve it with few conditions missing but with his intervention I was able to give a working code (as looked to him and me).</p>
+<p><strong>Round 4 (Technical-Managerial):</strong><br /> 1. There were two interviewers. First question was tell me about yourself and your work.</p>
+<p>2. Given a m*n matrix, we need to find the number of ways by which a bot can reach the (m-1,n-1) block if bot can move only right and down while starting from (0,0). I gave him a solution using DP. Build the recursion tree showing the final solution. He didn’t ask to code but asked to finds the recurrence relation. I got stuck I don’t know why. I guess this was the start of decline. he gave some hints and I was finally able to write it, still.</p>
+<p>3. For a given binary tree and a key, prune the tree with all the paths (root to leaf) that have sum less than or equal to k. I was able to solve it with some hint. The solution looked convincing.</p>
+<p>Four days later I got a mail stating that “<em>Unfortunately, we are unable to take your candidature further, at the moment. However, your credentials are extremely impressive and we wish to retain your details on our active database. We shall get back to you as soon as another similar opportunity opens up</em>.”</p>
+<pre class="brush: cpp; title: ; notranslate" title=""><code></code></pre>
+<p>This article is compiled by Rohit. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-10" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-3/" class="uri">http://www.geeksforgeeks.org/amazon-interview-3/</a></p>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 23</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-23" class="section level1">
+<h1>Amazon Interview | Set 23</h1>
+<p><strong>I was recently interviewed for SDE1 position in Amazon Bangalore. 1 online coding test followed by 5 rounds of F2F onsite interviews.</strong><span id="more-116069"></span></p>
+<p><strong>Online Coding Test (4 Problems, 2 hours)Â </strong>From Interviewstreet<br /> All below problems had multiple test cases for which the code was validated against.<br /> <strong>1.Â </strong>Code for converting floating point decimal number to binary numbers. If the number cannot be converted, state so.<br /> <strong>2.Â </strong>Given an integer array A of size n. Given an integer k &lt; n. Construct an array B, such that<br /> B[i] = min{A[i], A[i+1], A[i+2], A[i+3], â€¦â€¦., A[i+k]}<br /> Solve in time complexity better than O(nk).<br /> Hint: use min Heaps<br /> <strong>3.Â </strong>A singly liked list. Can have a loop. Detect it and find the size of list.<br /> <strong>4.</strong>Â A singly link list and a number â€˜Kâ€™, swap the Kth node from the start with the Kth node from the last. Check all the edge cases.<br /> Sample Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8 and K = 3<br /> Sample Output : 1-&gt;2-&gt;6-&gt;4-&gt;5-&gt;3-&gt;7-&gt;8</p>
+<p>Sample Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8 and K = 10<br /> Sample Output: print error â€œLIST IS OF LESSER SIZEâ€?.</p>
+<p><strong>Face to face: Round 1(Technical, 1 hour):</strong><br /> <strong>1.Â </strong><span>Given a K sorted array. Sort it with minimum time complexity.</span><br /> <span>O(nlogk) solution was expected. Code was required.</span><br /> <span><strong>2.</strong>Â Given a file with many product name of an company. You have to find out unique name in the file.Â SupposeÂ mobile,laptop,notepad,desktop,pen,mobile,pen .. etc is given we have to print laptop,notepad,desktop. Pen and mobile should be remove due toÂ duplicity.Â </span></p>
+<p>Code was required.<span>I gave o(n) time complexity solution for it using 1 hash table and Doubly Link List.Â </span></p>
+<p><br /> <strong>Face to face: Round 2(Technical, 1 hour):</strong><br /> <strong>1.</strong><span>Â Given a Sorted array with oneÂ missingÂ number. I have to find firstÂ missingÂ number.</span>Code was required.Â I gave solution with o(logn) time complexity.</p>
+<p><strong>2.</strong><span>Â Give a Building with n floor. A person can take 1 step or 2 step to climb. Find the number of ways to reach nth floor.Â </span>Code was required</p>
+<p><br /> <strong>Face to face: Round 3(Technical, 1 hour 20 minutes):</strong><br /> <strong>1.</strong>Â Given an Sorted Array with duplicates I have to find first index of any duplicates. Suppose 12222333355578999 first Index of 2 in 1. Code was required.I gave O(logn) Solution.</p>
+<p><strong>2.</strong> Given an binary tree. Traverse it in zig-zag manner. Code was required.Solved using a 2 stack.</p>
+<p><span><strong>3.</strong> In a snake ladder game without snake and ladder :). If some one is playing then we have to findÂ probability to win the game of any player. Condition of winning is if you are on 96 and 5 comes in dice then you loose the game and If you are at 96 and 4 comes then only you will win the game. But you cant use dice more than Y time.</span></p>
+<p>I gave o(XY) Solution through DP. Where X is sum.</p>
+<p><span>Interviewer was very happy after that.</span></p>
+<p><br /> <strong>Face to face: Round 4(Manager, 1 hour 20 minutes):</strong><br /> <strong>1.Â </strong><span>Tell me about yourself.</span><br /> <strong>2.</strong><span>Â Why do you wish to move out of current job?</span><br /> <strong>3.</strong><span>Â Explain in detail the current project. Intention was to understand whether I had good depth of knowledge of the project and team I was working in.</span><br /> <strong>4.Â </strong><span>How big is the team &amp; what is your role?</span><br /> <strong>5.</strong><span>Â Proudest project that I have worked in my current company. Details.</span><br /> <strong>6.</strong><span>Â Any instances where you are not satisfied with what you did?</span><br /> <strong>7.Â </strong><span>Any instances that you felt the need for improvement in some areas, which could have helped you technically and professionally. Any negative feedbacks.</span><br /> <strong>9.</strong>Â Write the code to store Binary Search Tree in Doubly Link list. Code was required.<br /> <strong>10.Â </strong>Petrol and distance problem given in Geeks for Geeks.Â <span><a href="http://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/" class="uri">http://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/</a></span></p>
+<p><br /> <strong>Face to face: Round 5(Manager, 1 hour 10 minutes):</strong><br /> <strong>1.</strong><span>Â Tell me about yourself. It starts with a basic intro round, where your communication skills are judged.</span><br /> <strong>2.</strong><span>Â Why changing the job?</span><br /> <strong>3.Â </strong><span>Explain in detail the current project. In depth information.</span><br /> <strong>4.</strong><span>Â What will you do if your module is dependent on some one else and you are stuck due to him. I told him to that I will create stub ( Template of desire data using edge case conditions)Â </span><br /> <strong>5.</strong><span>Â Write the full code of finding a Name and phone in simple phone(In which abc all come on 1 using pressing speed and time duration) using sub string of name. I gave 2 solution 1 using suffix tree and 2 using hash table and KMP Algorithm. He told me to write full code of Â this problem using hash table and KMP Algorithm. I wrote the full and Manager wasÂ satisfied with my answer.Â </span></p>
+<p>Three days later I was informed that I was not selected. With below mail :-</p>
+<p>Thanks for your interest in Amazon. We appreciate you sparing time towards discussions with us.Â After the detailed discussions with you and internal discussions thereafter, we regret that we do not have a suitable opening at present that does justice to your aspirations and capabilities. Hence we would not be able to take it forward at this juncture.</p>
+<p>With your permission, we will retain your details in our database and would get in touch with you, should there be a suitable opening in future.</p>
+<p>Wish you all the best in your endeavors.</p>
+<p>I am still not able to find the correct reason behind it. And Now I am frustrated.</p>
+<p>This article is compiled by anonymous user. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-30" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-23/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-23/</a></p>
+</div>
+</div>
+</body>
+</html>
+

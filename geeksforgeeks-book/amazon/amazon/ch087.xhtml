@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 78</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-78" class="section level1">
+<h1>Amazon Interview | Set 78</h1>
+<p>The first round was an online test hosted on Interviewstreet.com. Around 350 students appeared in the online test.<span id="more-128168"></span> The duration was 90 minutes. It consisted of 20 MCQs based primarily on Predicting The Output, OS, CN and Data Structures.</p>
+<p>These questions were pretty basic and easily solvable.</p>
+<p>Apart from that, there were 2 coding questions.</p>
+<p>1. Given a string, find the first element which is non -repetitive i.e that element must not be present anywhere else in the string.</p>
+<pre><code>          Eg : Input : teeterson
+               Output : r, as it is the first element which
+                        is non repetitive. </code></pre>
+<p>2. Given a string of digits,find the next smallest number using the same digits.If its not possible to get such a number print -1;</p>
+<pre><code>        Eg : Input : &quot;123&quot;  Output : &quot;132&quot;
+             Input : &quot;12453&quot; Output : &quot;123534&quot;
+             Input : &quot;987&quot;     Output :  &quot;-1&quot; </code></pre>
+<p>After a week, the results came out and 25 students were shortlisted.</p>
+<p><strong>Personal Interviews:</strong></p>
+<p><strong>Technical Interview 1 :</strong></p>
+<p>1. Given an array of 1s followed by 0s,find the number of 0s.</p>
+<pre><code>     Eg : Input : 111100    Output =2
+          Input : 1         Output =0 </code></pre>
+<p>I solved it by using Binary Search to find the first and last occurrence of 0 in the array and subtracting the results.</p>
+<p>2. Given an array of positive and negative numbers, find the pair of elements whose sum is closest to 0.</p>
+<pre><code>     Eg : Input :  3 5 -9 -4 17 11
+          Output  3 , -4  </code></pre>
+<p>The brute force solution would be O(n^2) by comparing each pair of elements.As expected, he asked me to optimize my solution.<br /> So I sorted the array using merge sort. (I know its not in-place but it did not strike me at the time)<br /> Then used two indexes at the beginning and end of the the array and incremented/decremented the indexes as needed.</p>
+<p>3. Given a Binary Tree , print all the root to leaf paths.</p>
+<p>I started by telling him my approach and the logic behind the recursive solution that I had in mind. Then he asked me to write test cases for the function that I had written.</p>
+<p>6 students were selected after this round.</p>
+<p><strong>Technical Interview 2</strong></p>
+<p>1. Given a binary tree convert it to a double linked list.</p>
+<p>2. Given an array of integers , replace each element with the product of the remaining elements.</p>
+<pre><code>  Eg : Input - 1 2 3 4
+       Output : 24 12 8 6 </code></pre>
+<p>First, i gave the obvious solution. I computed the product of the whole array and then divided it by each element to get the resultant array.</p>
+<p>But he asked me to do it without using the division operation. After some cross questioning I gave the following solution.<br /> Store the product of the left side elements for each integer in an array L[].</p>
+<pre><code>For eg : Here , L[]= {1 , 1 , 2 , 6 }
+
+Do the same for the right side elements.
+
+Here R[] = { 24 , 12 , 4 , 1}
+
+The multiply R[i] and L[i]  to get the resultant array.
+Complexity : O(n) </code></pre>
+<p>Finally 2 people were selected.<br /> Result: Selected for a 6 month long internship as SDE-T (Testing)</p>
+<p>GeeksForGeeks has been instrumental in my preparation for the interviews and I am really glad that I discovered this website at the right time.</p>
+<p>PS : Could you guys tell me if the SDE-T position is inferior to the SDE-1 position or are they of the same level?</p>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-85" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-78-fresher-internship/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-78-fresher-internship/</a></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>
+

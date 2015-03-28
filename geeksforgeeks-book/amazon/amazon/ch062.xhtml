@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 54 (For Internship)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-54-for-internship" class="section level1">
+<h1>Amazon Interview | Set 54 (For Internship)</h1>
+<p>Hi All. Here is my interview experience for internship at Amazon.<br /> Position: 2-Month Intern<br /> No. of Rounds: 1 Online + 2 PI (2 F2F)<span id="more-123697"></span></p>
+<p><strong>Round 1: (90 minutes)</strong><br /> 20 MCQs and 2 coding questions<br /> There were 20 MCQs based on C output, probability, basic maths, OOPS, algorithm analysis and Operating Systems.</p>
+<p><strong>Question 1:</strong> Given a linked list, write a function to reverse every k nodes (where k is an input to the function).<br /> Example:<br /> Inputs: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;NULL and k = 3<br /> Output: 3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4-&gt;8-&gt;7-&gt;NULL.<br /> Inputs: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;NULL and k = 5<br /> Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;8-&gt;7-&gt;6-&gt;NULL.</p>
+<p><strong>Question 2:</strong> Given a string containing words separated by arbitrary number of spaces. Write a function that returns a string consisting of the first letter of each word. (Note: there may be any number of spaces at the starting of the given string, at the end of the given string or in between words of the string.)<br /> Example:<br /> Input: ” this is a test case ”<br /> Output: tiatc<br /> (Function prototypes and main was given for both the questions. Although many solutions passed the initial test cases, they were rejected later as they did not satisfy boundary cases.)</p>
+<p><strong>Round 2: (face to face) (1 hour 20 min)</strong><br /> <strong>Question 1:</strong> Given two numbers represented by two linked lists, write a function that returns sum list. The sum list is linked list representation of addition of two input numbers.<br /> Example</p>
+<pre><code>Input:
+ First List: 5-&gt;6-&gt;3  // represents number 563
+ Second List: 8-&gt;4-&gt;2 //  represents number 842
+Output
+ Resultant list: 1-&gt;4-&gt;0-&gt;5  // represents number 1405</code></pre>
+<p>I reversed the linked lists and simply added the corresponding nodes along with the carry. Then he asked me to solve the question without reversing the list. Then I solved the question iteratively without reversing the lists.<br /> The interviewer then asked me to write a recursive code for the same problem.<br /> After that he asked me to modify the code so that the carry at each place is passed by value instead of using pointers(which I had used in my code).</p>
+<p><strong>Question 2:</strong> iterative and recursive code to reverse a linked list(Take Care of corner cases: when list has no nodes or contains a single node)</p>
+<p><strong>Question 3:</strong> Write a function to check whether a binary tree is a sub-tree of another binary tree (Check for all corner cases).<br /> I solved it in O(n^2) time complexity. He did not ask me to optimize my code.</p>
+<p><strong>Question 4:</strong> Which data structure would you use to keep records of stock market?</p>
+<p>I asked him to clarify the problem statement.</p>
+<p>He then asked me : Suppose you have to maintain the stock values of various companies during various periods and return minimum stock value of a particular company over a given period of time.</p>
+<p>I answered segment tree (Probably the correct answer was queue data structure).<br /> However the interviewer proceeded with questions on segment tree.<br /> He asked me to write a code for<br /> <strong>a)</strong> Creating a segment tree<br /> <strong>b)</strong> Performing range minimum query in a segment tree<br /> <strong>c)</strong> Updating the segment tree<br /> He asked me to analyze the time complexity for building the segment tree and performing the range minimum query in the segment tree.<br /> He then asked me: If you are to maintain the stock value of a company for the past 6 months..then you have to update the segment tree every day by deleting a stock value and inserting a new stock value. How would you do that?<br /> Here I got stuck and could not perform the updation in better than O(n) time.(However using queue it can be performed in O(1) time) .</p>
+<p>He finally asked me if I had any questions.</p>
+<p><strong>Round 3: (face to face) (20 min)</strong><br /> Only one technical question was asked to me in this round.</p>
+<p><strong>a)</strong> He asked me to speak something about myself and my technical achievements..</p>
+<p><strong>b)</strong> How to store a binary tree in a file &amp; then read back.(It is not necessarily a BST)<br /> First I answered that I would store level-order traversal of the tree.<br /> He then asked me how I would maintain the nodes at various levels (which I was unable to answer). So, I changed my approach and told that: I would store in-order and pre-order traversals of the tree from which the original tree can be easily retrieved.<br /> But then he told me to optimize my approach (As this approach would require twice the original space to store the data in the nodes). I could not further optimize my approach (However the better approach was to use parenthesization.</p>
+<pre><code>
+                                  A
+                                /   \
+                                       B    C
+                                     /   \
+                            D     E </code></pre>
+<p>If this is the binary tree then it can be stored as (A(B(D),(E)),(C)) in the file.)<br /> <strong>c)</strong> Then there was a 10 min discussion my project , the problems I encountered and how I solved them.<br /> <strong>d)</strong> Finally he asked me if I had any questions.<br /> I asked about the intern projects at Amazon and the use of DBMS and NETWORKING in it.<br /> He started elaborating the entire work-process at Amazon and his work-experienceâ€¦â€¦..most of which I could hardly understand. He also told me to have a good knowledge of JAVA as it will be required at some stage during the projects.</p>
+<p>Finally I got selected.</p>
+<p>Many Many congratulations to the author. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-60" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-54-internship/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-54-internship/</a></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>
+

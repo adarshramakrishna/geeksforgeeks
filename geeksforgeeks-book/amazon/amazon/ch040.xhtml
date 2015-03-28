@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 32</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-32" class="section level1">
+<h1>Amazon Interview | Set 32</h1>
+<p>I would like to contribute for GeeksForGeeks by sharing my experience of Amazon Interview process. This was for a SDE position in Hyderabad. <span id="more-119000"></span>I have almost 2 years of work experience in Samsung.</p>
+<p><strong>1st Round: Written</strong><br /> Test was on Interview Street Platform.</p>
+<p><strong>Qs-1)</strong> A function printMostFrequentWords, which takes in an array of strings, was given. It is required to print a list of all the letters that occurred with the highest frequency in each line of the array, followed by the frequency.<br /> The list of letters should be an alphabetical list of upper case letters followed by an alphabetical list of lower case letters.</p>
+<p>Sample Test Cases:</p>
+<p>Input #00:</p>
+<p>When riding your bicycle backwards down a one-way street, if the wheel falls of a canoe, how many ball bearings does it take to fill</p>
+<p>up a water buffalo?</p>
+<p>Hello Howard.</p>
+<p>Output #00:</p>
+<p>e 6</p>
+<p>al 7</p>
+<p>a 3</p>
+<p>Hlo 2</p>
+<p><strong>Qs-2)</strong> <a href="http://www.geeksforgeeks.org/construct-a-special-tree-from-given-preorder-traversal/" class="uri">http://www.geeksforgeeks.org/construct-a-special-tree-from-given-preorder-traversal/</a> –Variation of this one</p>
+<p><strong>Qs-3)</strong> <a href="http://www.careercup.com/question?id=12998667" class="uri">http://www.careercup.com/question?id=12998667</a></p>
+<p>Third case was a bit tricky.</p>
+<p><strong>Qs-4)</strong> Rotate an M*N matrix by 90 degrees. There was no function given in this case. Everything should be assumed by you only.</p>
+<p><strong>Qs-5)</strong> Delete the Kth Node from a linked list.</p>
+<p>I solved 4 questions with all test cases while for another 1 only 10/15 test cases passed.</p>
+<p><strong>2nd Round: Telephonic</strong></p>
+<p><strong>Qs-1)</strong> Spiral level order traversal of a tree. (Use two stacks)</p>
+<p><strong>Qs-2)</strong> A person can jump 1 or 2 steps. No of ways of reaching the top of n stairs. (Try for O(1) space.)</p>
+<p><strong>Qs-3)</strong> Find the longest substring in a string with exactly 2 unique characters. The substring should not contain more than two different chars.</p>
+<p>So, aaaaabbaaa is a valid substring</p>
+<p>Also, ccaccccaccaca is a valid substring.</p>
+<p>Need to write code for the 3rd qs.</p>
+<p>Expected = O(n)</p>
+<p>I answered all the 3 questions and was confident of receiving the call for onsite which I did.</p>
+<p><strong>F2F ROUND 1:</strong></p>
+<p><strong>Qs-1)</strong> The question was to print a tree vertically. Please note it was not asked to get the sum at each vertical level. We have to print nodes at various vertical levels starting from the leftmost vertical level to the rightmost vertical level.</p>
+<p>I suggested array of vector then a hashing. Finally I gave a solution based on DLL.</p>
+<p>Code was written using DLL only.</p>
+<p><strong>Qs-2 )</strong> Only approach was asked on how will you save a binary tree in a file( Not a BST)</p>
+<p>There are no assumptions on Binary tree.</p>
+<p>This round went well for me.</p>
+<p><strong>F2F ROUND 2:</strong></p>
+<p><strong>Qs-1)</strong> First I was asked to design a Data structure with O(1) insertion and O(1) search. I told about hashing. Then he told me to get a random number from the current list of numbers which have been inserted into my Ds. So I maintained an array storing pointers to the hash table.(Assume no Collision, he told so).Then he said O(1) deletion also. I was stuck on this I was not able to make both deletion and getRandom in O(1).After Some Discussion he moved on.</p>
+<p><strong>Qs-2)</strong> He told there is a range, defined by a min val and a max val. In a given array I had to find all elements within the range. I told him its only possible in O(n).We have to look at each element. Then he told me to assume array as sorted. Then I used Binary search for finding indexes of ceil of min and floor of max to find the elements in the range.</p>
+<p>This round went ok for me.2nd question i wrote proper code with all edge cases, but in first I got stuck a bit.</p>
+<p><strong>F2F ROUND 3:</strong></p>
+<p><strong>Qs-1)</strong> In a binary tree, a complete path is defined as a path from root to a leaf. The sum of all nodes on that path is defined as the sum of that path. Given a number K, we have to remove (prune the tree) nodes from the tree which lie on a path having sum less than K.</p>
+<p>Note: A node can be part of multiple paths. So we have to delete it only in case when all paths from it have sum less than K.</p>
+<p>I was able to solve the problem and write correct working code for this.<br /> (Hint : Think of a bottom up approach.)<br /> Note: Values in tree can be -ve also.</p>
+<p><strong>Qs-2)</strong> A robot problem: No. of ways to reach from 0,0 to m,n in a m*n grid. I had to tell recursive function only. No code required.</p>
+<p>This round went very good for me. The first question was a bit tricky but solving it raised my confidence.</p>
+<p><strong>F2F Round 4 with Hiring Manager:</strong></p>
+<p><strong>Qs-1)</strong> This was mostly a HR Based round. A lot of questions about my previous work, my initiatives, challenges I faced and many other questions.</p>
+<p>A simple question on matrix was also there. Fill rows and cols with ones if a 1 is present in that row or a col. Code also required.</p>
+<p>Question based on shipment and orders etc. Eg: What all things to take care in b/w of order placed and item shipped. What all factors and things you will consider.<br /> I was being interviewed for transportation team. So questions based on it.</p>
+<p>Overall, the round went well</p>
+<p>I returned to Bangalore that night.<br /> Few days later, I got a call from HR saying I am very close and I need to appear for another round in Bangalore office.</p>
+<p><strong>F2f Round 5:</strong></p>
+<p>About half an hour Hr based discussion.<br /> Then two Technical questions with code:</p>
+<p><strong>Qs-1)</strong> In a binary tree, return true if all leaves are at same level and return false if all leaves are not at the same level.</p>
+<p><strong>Qs-2)</strong> An array is given which is first increasing and then decreasing. Find the pivot element. Need to take care of all the edge cases.</p>
+<p>This round went well for me. Mostly this round was on soft skills. I did well in coding questions and wrote proper code for both.</p>
+<p>In the evening I got a call from HR that I was selected. <img src="media/file4.gif" alt=":)" /><br /> I would like to thank GeeksForGeeks Team for being a great help for me.</p>
+<pre class="brush: cpp; title: ; notranslate" title=""><code></code></pre>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-38" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-32/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-32/</a></p>
+</div>
+</div>
+</body>
+</html>
+

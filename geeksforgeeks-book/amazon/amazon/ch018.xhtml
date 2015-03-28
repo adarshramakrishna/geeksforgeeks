@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 9 (Answers)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-9-answers" class="section level1">
+<h1>Amazon Interview | Set 9 (Answers)</h1>
+<p>This post is about answers to the questions asked in <a href="http://www.geeksforgeeks.org/archives/27276">Amazon Interview | Set 9</a>. It contains links to some of the solutions available on the geeksforgeeks. I have also written my answers which I replied in the interview. I hope it would help the readers.<span id="more-27395"></span></p>
+<p><strong>Online Programming Round: (5 methods, 2 hours)</strong></p>
+<p><strong>3) Â Â </strong>Â Â <a href="http://www.geeksforgeeks.org/archives/10379" class="uri">http://www.geeksforgeeks.org/archives/10379</a></p>
+<p><strong>5)Â </strong>Â Â Â  <a href="http://www.geeksforgeeks.org/archives/12832" class="uri">http://www.geeksforgeeks.org/archives/12832</a></p>
+<p> </p>
+<p><strong>Telephonic Interview 1:</strong></p>
+<p><strong>1)Â </strong>Â Â Â  <a href="http://www.geeksforgeeks.org/archives/24272">http://www.geeksforgeeks.org/archives/24272Â </a></p>
+<p><strong>2)Â </strong>Â Â Â  <a href="http://www.geeksforgeeks.org/archives/18752" class="uri">http://www.geeksforgeeks.org/archives/18752</a></p>
+<p><strong>3)Â Â </strong>Â Â  <a href="http://www.geeksforgeeks.org/archives/2398">http://www.geeksforgeeks.org/archives/2398Â </a></p>
+<p> </p>
+<p><strong>Telephonic Interview 2:</strong></p>
+<p><strong>3)Â </strong>Â Â Â  Find the distance of every other point from P. Then use of max-heap of size K. <a href="http://www.geeksforgeeks.org/archives/2392" class="uri">http://www.geeksforgeeks.org/archives/2392</a></p>
+<p> </p>
+<p><strong>Face-to-face Interview 1: (Hyderabad, Date: November 08, 2012)</strong></p>
+<p><strong>2)Â </strong>Â Â Â  I gave the following solution (with the help of the interviewer):</p>
+<p>1. For every set, find out the number of sets it has intersection with. Also maintain those set indices.</p>
+<p>2. Remove the set which has maximum number of intersection. And update the remaining numbers.</p>
+<p>3. Repeat step 2 till we have any set which has intersection with any other set. At the end, we will have the solution. (Still not sure about optimality).</p>
+<p>We can relate the solution with graphs: Remove some nodes so that remaining all the nodes are isolated nodes.</p>
+<p>Searching: To make searching efficient, we can build trie data structure using bits for every set. So that we can find the intersections fasters.</p>
+<p><br /> <strong>Face-to-face Interview 2 (with a manager):</strong></p>
+<p><strong>1)</strong>Â  Â  I tried for some time. Then the interviewer gave me the formula. The number is 1+ceil((N-W)/S) in all the cases.</p>
+<p>For second part of question, simple solution is to find min in every window. But we can optimize so that we can utilize previous results/previous min.</p>
+<p><em>Bit optimal:</em> I created a min-heap of W elements. But the heap contained indices of the array elements, not the values inside the array itself. The indices were stored in heap as per their values in the array. Then for a new window, search the heap linearly (heap was in form of array), replace the old indices (which are no longer in the new window) with the new indices, and adjust that index in the heap. After adjusting all the new indices, we will have new min for the new window at the root. (Not sure whether the complexity brought in to the solution is worth!)</p>
+<p><strong>Â </strong></p>
+<p><strong>Face-to-face Interview 3:</strong></p>
+<p><strong>2)</strong>Â Â Â Â  I gave a solution based on trie data structure using characters of the string. But he suggested to build trie based on the string itself. However, I was not able to think in that way.</p>
+<p><strong>3)Â </strong>Â Â Â  Linear search. Binary search.</p>
+<p> </p>
+<p><strong>Face-to-face Interview 4 (with the manager of the unit of opening):</strong></p>
+<p><strong>2)</strong>Â Â Â Â  I said, we can organize an online coding competition. People would register and we will have the details. He replied, itâ€™s too expensive. Then I said, we can postpone the competition!</p>
+<p><strong>All the Best!</strong></p>
+<p>Thanks to <strong>Hitesh</strong> for sharing his answers. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-16" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-9-answers/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-9-answers/</a></p>
+</div>
+</div>
+</body>
+</html>
+

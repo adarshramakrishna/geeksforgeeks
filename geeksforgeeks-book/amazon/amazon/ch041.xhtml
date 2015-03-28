@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 33</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-33" class="section level1">
+<h1>Amazon Interview | Set 33</h1>
+<p>I recently attended a walk-in for Software development Engineer (SDE- 1) at Amazon, Bangalore. <span id="more-119437"></span></p>
+<p>Here is my experience of Amazon interview.</p>
+<p>As I was from the same city, there was no phone interview. I have listed down all questions that I remember.</p>
+<p><strong>Round 1: Data Structures, Algorithms and coding (1 hour)</strong></p>
+<p>Interviewer just started off with questions without introduction and stuff.</p>
+<p><strong>1)</strong> Given a singly linked list, swap every 2 nodes, for odd number of input; retain the last node as it is.<br /> Eg: Input: 5 13 15 18 20 11 6 7<br /> Output: 13 5 18 15 11 20 7 6<br /> I was asked to write the code straight-away.<br /> Wrote the same, verified boundary cases and discussed.</p>
+<p><strong>2)</strong> Given a binary tree, find the number of pairs where sum of 2 nodesâ€™ values equal to k<br /> Eg:</p>
+<pre><code> 1
+2 3
+4 5 7 </code></pre>
+<p>Say k=7, output =2 ( 2+5, 3+4)<br /> Suggested an approach where Iâ€™d use inorder traversal of this,<br /> Then interviewer asked me to solve the simplified problem, find k in sorted array instead of tree.<br /> Got solution for this one, to have 2 pointers at each end, and traverse accordingly.<br /> I was asked the approach for extending same to BST.<br /> Then, I implemented the same for BST using stack.</p>
+<p><strong>Round 2: Data Structures, Algorithms and coding (1 hour)</strong></p>
+<p><strong>1)</strong> Given input as k sorted arrays, generate a single sorted list as output.<br /> Eg:<br /> Array1: 1 5 8 9 11 â€¦.<br /> Array2: 2 12 24 44 â€¦..<br /> .<br /> .<br /> Arrayk: 3 15 79 115 â€¦.<br /> Output: Array1: 1 2 3 5 8 9 11 12 15 â€¦.<br /> Discussed the approach, and complexity, then wrote the code for the same.</p>
+<p><strong>2)</strong> Given a function isGreater, compare user defined objects and then return the object that is greater than all other objects.<br /> Twist: obj1 &gt; obj2 and obj2 &gt; obj3 does not mean obj1&gt;obj3<br /> I asked for the use case for the same, as I was not convinced with the problem.<br /> He gave an example of games/ 1 team winning another.<br /> Discussed the approach and then wrote the code.</p>
+<p><strong>3)</strong> Given an input sentence, output the non repeated words in the sentence.</p>
+<p><strong>4)</strong> How are maps implemented?</p>
+<p>Interviewer then clarified my questions about Amazon.</p>
+<p>Both first and second rounds were at similar difficulty level.</p>
+<p>If the interview feedback was bad for any of these, the candidate was eliminated. If at least 1 of these went well and other â€œnot sureâ€?, then too candidate is called for next rounds.</p>
+<p><strong>Round 3: Hiring Manager round (1 hour 40 minutes)</strong><br /> Discussed on my current roles and responsibilities</p>
+<p>why do you want to join to Amazon?</p>
+<p>What are your accomplishments in your role so far?</p>
+<p>What are the things that youâ€™re not good at and need to improve?</p>
+<p>Serialization of Binary tree. Given 1 traversal is it possible to re-construct the binary tree.</p>
+<p>Write code to reconstruct the tree given any 2 traversals.<br /> I took in-order and post-order traversal, discussed the approach and wrote recursive solution.<br /> Was then asked the approach for iterative.</p>
+<p><strong>Round 4: Culture Fit Round</strong><br /> This surprisingly had a data structure question first.</p>
+<p><strong>1)</strong> Given a n (large number) lists of customers who visited n webpages on n (large number) days, design a data structure to get customers who have visited the website on exactly “k” days and should have visited at least “m” distinct pages altogether.<br /> Was then asked to improvise the solution as much as possible</p>
+<p><strong>2)</strong> Details on my previous project and job profile</p>
+<p><strong>3)</strong> Challenging situation faced</p>
+<p><strong>4)</strong> Why should we hire you?</p>
+<p>Then, he answered some of my questions.</p>
+<p><strong>Round 5: Coding, Algorithm and data structures (Technical round with a senior developer)</strong></p>
+<p>Started with questions straight away</p>
+<p><strong>1)</strong> Least common ancestor of a binary tree (Solution and Code)</p>
+<p><strong>2)</strong> Given a 2 dimensional array sorted vertically and horizontally, search for an element and return true if the element is present. (Algorithm, Code and Complexity)</p>
+<p>Example</p>
+<pre><code>                1             5           13           29
+
+                11           16           25           38
+
+                45           49           52           57
+
+                51           54           59           66</code></pre>
+<p><strong>3)</strong> Something on count sort.</p>
+<p><strong>4)</strong> Print binary tree in zig-zag order..</p>
+<p><strong>5)</strong> Gold box problem (Approach)</p>
+<p>There are â€˜nâ€™ gold boxes placed in a row, each having different number of gold coins.</p>
+<p>2 players play a game, where the motive is to collect the maximum number of gold coins. Each player can see how many coins are present in each box, but can get a box from either end only, on his turn.</p>
+<p>Design a strategy such that Player1 wins (Assuming both players play smartly)</p>
+<p>I got the hiring call after couple of days, after my last round of interview. They said feedback was very positive and theyâ€™re happy to hire me.</p>
+<p>Was so happy <img src="media/file4.gif" alt=":-)" /> <img src="media/file4.gif" alt=":-)" /> Thank you..</p>
+<pre class="brush: cpp; title: ; notranslate" title=""><code></code></pre>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-39" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-33-2/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-33-2/</a></p>
+</div>
+</div>
+</body>
+</html>
+

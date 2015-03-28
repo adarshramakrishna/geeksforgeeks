@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 98 (On-Campus)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-98-on-campus" class="section level1">
+<h1>Amazon Interview | Set 98 (On-Campus)</h1>
+<p>I am a fourth year undergraduate CSE. I had my amazon interview in my campus.<span id="more-130432"></span></p>
+<p><strong>First Round:</strong><br /> First round was a simple round. It had 20 MCQ questions on C/C++ and 2 coding questions. The coding questions were:<br /> 1.) You are given a string that represent an expression of digits and operands. Eg. 1+2*3 , 1-2+4. You need to evaluate the string or the expression. NO BODMAS is followed. If the expression is of incorrect syntax return -1.<br /> Test cases :<br /> a) 1+2*3 will be evaluated to 9.<br /> b) 4-2+6*3 will be evaluated to 24.<br /> c) 1++2 will be evaluated to -1(INVALID).<br /> Also, in the string spaces can occur. For that case we need to ignore the spaces. Like :- 1*2 -1 is equals to 1.</p>
+<p>2.) You are given an array of both negative and positive integers. You need to rearrange the array such that positive and negative numbers alternate. Also, the order should be same as previous array and only O(1) auxiliary space can be used and time complexity boundation O(n).<br /> eg. -2 3 4 5 -1 -6 7 9 1<br /> result – 3 -2 4 -1 5 -6 7 9 1.</p>
+<p><strong>Second Round:</strong><br /> In this round, we were divided in groups of 5. And two problems were given and we need to write the code on paper for that problem.<br /> My code were :<br /> 1.) You need to determine whether the linked list is palindrome or not.</p>
+<p>2.) Print the level order traversal of the binary tree in the spiral form.[They also asked us the solution without any extra space and O(n)<br /> Time complexity].</p>
+<p><strong>Third Round(F2F):</strong><br /> Interview asked me to write the code for the two problems which are :<br /> 1.) Reverse the alternate K Nodes of the Linked List.<br /> eg. 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;NULL<br /> Result – 3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4-&gt;8-&gt;7-&gt;NULL.</p>
+<p>2.) You are given the binary Tree and the two nodes say k1 and k2 . You need to determine whether the two nodes are cousins of eachother or not.<br /> eg. 6<br /> / \<br /> 3 5<br /> / \ / \<br /> 7 8 1 3<br /> and say two node be 7 &amp; 1. result will be TRUE.<br /> say two nodes are 3 &amp; 5. result will be FALSE.<br /> say two nodes are 7 &amp; 5. result will be FALSE.</p>
+<p>3.) Give the algorithm, data structures, time complexity and space complexity for the following problem :<br /> In our mobile phones when we enter say four initials of the number say 9 4 5 6, then our phone shows the whole lists of number that starts with these entered number.<br /> Now the problem is : how it is implemented and what is the best way of doing this keeping the balance between space and time complexity. Also, user can enter any number of initials and your program should print all the numbers with those initials that are present in your phonebook.</p>
+<p><strong>Fourth Round(F2F):</strong><br /> Interviewer asked some questions on C++ . They were :<br /> 1. What are <a href="http://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/">virtual functions</a>?<br /> 2. What is the<a href="http://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/">use of virtual functions</a>?<br /> 3. What are pure Virtual functions?<br /> 4. Syntaxes of Virtual functions and <a href="http://geeksquiz.com/pure-virtual-functions-and-abstract-classes/">pure virtual functions</a>?<br /> 5. What are <a href="http://geeksquiz.com/pure-virtual-functions-and-abstract-classes/">abstract classes in C++</a>?<br /> 6. How we can implement pure virtual functions in JAVA ?</p>
+<p>Design question :<br /> How we can restrict our class so that only single instance of it can be created?<br /> What is Singleton Design Pattern?</p>
+<p>Operating system Question :<br /> 1. What are semaphores?<br /> 2. What is producer consumer problem and give different solution for it?</p>
+<p>Two questions he asked me to code :<br /> 1.Convert one string to another string.For that purpose you can use three operations – SUBSTITUTE,DELETE,INSERT.Each having cost as one except<br /> substitute having cost 2.You have to determine the minimum cost required.<br /> For eg.<br /> First String : INCLINE<br /> Second String :DECLINE<br /> Minimum cost required are : 4 [change I to D and N to E].</p>
+<p>2. Implement the stack in which push(),pop() and getMiddle() has O(1) complexity at any point of time.</p>
+<p>3. Find the maximum size BST present in the binary tree.</p>
+<p>He also asked question about my projects and why I choose them. He asked to just explain the whole set of thing that I have performed in it.<br /> (About 10 minutes discussion)</p>
+<p><strong>Fifth Round(F2F):</strong><br /> This round started with the deep discussion about my projects. Interviewer tried to get each and every aspect of my project with lot many why<br /> and how questions.She asked me the future scope of my project and what are learnings I got from it.(About 30 minutes discussion).</p>
+<p>Then she asked me implementation, algorithm, data structures, time complexity and space complexity for the following problem:<br /> Say we have website having several web-pages. And also there are lot many user who are accessing the web-site.<br /> say user 1 has access pattern : x-&gt;y-&gt;z-&gt;a-&gt;b-&gt;c-&gt;d-&gt;e-&gt;f<br /> user 2 has access pattern : z-&gt;a-&gt;b-&gt;c-&gt;d<br /> user 3 has access pattern : y-&gt;z-&gt;a-&gt;b-&gt;c-&gt;d<br /> user 4 has access pattern : a-&gt;b-&gt;c-&gt;d<br /> and list goes on for lot many users which are finite and numbered.<br /> Now the question is we have to determine the top 3 most occurring k-Page-sequence.<br /> for the above example result will be : (k=3) a-&gt;b-&gt;c , b-&gt;c-&gt;d , z-&gt;a-&gt;b.<br /> [Question took the long discussion and she kept adding constraints, cases and more problems to the above problem.]</p>
+<p>One question she asked me to code which is:<br /> You are given a sting. Find the character in that string which is not repeated and which occur last in the sequence.<br /> Eg.- aababaacdffgxc<br /> Result – x</p>
+<p>I would like to thanks GeeksForGeeks which helped me to improve my knowledge and understanding of Data structures and Algorithms <img src="media/file4.gif" alt=":)" /></p>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a></p>
+<div id="source-103" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-98-campus/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-98-campus/</a></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>
+

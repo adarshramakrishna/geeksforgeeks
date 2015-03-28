@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 22</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-22" class="section level1">
+<h1>Amazon Interview | Set 22</h1>
+<p><strong>I was recently interviewed for SDE1 position in Amazon Bangalore. 1 online coding test followed by 5 rounds of F2F onsite interviews.<span id="more-115337"></span></strong></p>
+<p>Online Coding Test (4 Problems, 2 hours) From Interviewstreet<br /> All below problems had multiple test cases for which the code was validated against.<br /> <strong>1.</strong> Code for converting floating point decimal number to binary numbers. If the number cannot be converted, state so.<br /> <strong>2.</strong> Given an integer array A of size n. Given an integer k B[i] = min{A[i], A[i+1], A[i+2], A[i+3], â€¦â€¦., A[i+k]}<br /> Solve in time complexity better than O(nk).<br /> Hint: use min Heaps<br /> <strong>3.</strong> A singly liked list. Can have a loop. Detect it and find the size of list.<br /> <strong>4.</strong> A singly link list and a number ‘K’, swap the Kth node from the start with the Kth node from the last. Check all the edge cases.<br /> Sample Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8 and K = 3<br /> Sample Output : 1-&gt;2-&gt;6-&gt;4-&gt;5-&gt;3-&gt;7-&gt;8</p>
+<p>Sample Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8 and K = 10<br /> Sample Output: print error “LIST IS OF LESSER SIZE”.</p>
+<p><br /> <strong>Face to face: Round 1(Technical, 1 hour):</strong><br /> <strong>1.</strong> Given a binary search tree. Find two numbers in the tree whose sum is k. If there are no such elements, state so. Assume that the tree is balanced.<br /> O(n) solution with O(logn) space was expected. Solved using two stacks. Code was required.<br /> <strong>2.</strong> Copy a linked list with next and random pointer. Not allowed to modify the given list at any time. Only read privilege on the given list.</p>
+<p><br /> <strong>Face to face: Round 2(Technical, 1 hour):</strong><br /> <strong>1.</strong> Given a matrix mxn containing integers. Find a kxk submatrix which has the largest sum.<br /> Solved using prefix sum matrix.<br /> <strong>2.</strong> Given an n-ary tree. Traverse it in zig-zag manner. Code was required.<br /> Solved using a Queue and a dummy node for level info.</p>
+<p><br /> <strong>Face to face: Round 3(Technical, 1 hour 20 minutes):</strong><br /> <strong>1.</strong> Given N buckets each of capacity 1L numbered from 1 to N. Buckets are arranged in a form of a 2D Pyramid shown below.</p>
+<pre><code>                                 1
+                         2             3
+                    4            5             6
+             7            8             9             10 </code></pre>
+<p>No each bucket is resting on 2 buckets. I will add water in the top bucket(number 1), after filling the bucket completely access of water will spill to the left and right bucket. Need to write a function which will return water in nth bucket after I will add x L of water in bucket number 1.<br /> float getWaterInBucket(float x, int n);</p>
+<p><strong>2.</strong> Given an mxn matrix. Each entry is a room. Rooms containing â€œLâ€? are locked. No one can enter a locked room. Rooms with â€œGâ€? are guarded rooms. Distance of a room from a Guard is defined as the minimum number of rooms that are encountered for the Guard to reach that room (Guard can move in all allowed 4 directions at max). Find the room that is farthest from all guards. Expected time was O(mn). (Hint: BFS)<br /> <a href="http://d2o58evtke57tz.cloudfront.net/wp-content/uploads/MicroSoftInterview.png"><img src="media/file7.png" title="MicroSoftInterview" /></a></p>
+<p><br /> <strong>Face to face: Round 4(Manager, 1 hour 20 minutes):</strong><br /> <strong>1.</strong> Tell me about yourself.<br /> <strong>2.</strong> Why do you wish to move out of current job?<br /> <strong>3.</strong> Explain in detail the current project. Intention was to understand whether I had good depth of knowledge of the project and team I was working in.(Nearly 30-40 minutes of discussion)<br /> <strong>4.</strong> How big is the team &amp; what is your role?<br /> <strong>5.</strong> Proudest project that I have worked in my current company. Details.<br /> <strong>6.</strong> Any instances where you are not satisfied with what you did?<br /> <strong>7.</strong> Any instances that you felt the need for improvement in some areas, which could have helped you technically and professionally. Any negative feedbacks.<br /> <strong>8.</strong> What happens when you type in a URL on browser?<br /> <strong>9.</strong> Given a binary tree with parent pointer only. Given pointers to two nodes in the tree, find the LCS(Least Common Ancestor). Quality Code was required with proper handling of boundary cases.<br /> <strong>10.</strong> Object oriented design of â€˜Snake and Ladder Gameâ€™. Was asked to propose classes, inheritance and reasoning behind it.</p>
+<p><br /> <strong>Face to face: Round 5(Manager, 1 hour 10 minutes):</strong><br /> <strong>1.</strong> Tell me about yourself. It starts with a basic intro round, where your communication skills are judged.<br /> <strong>2.</strong> Why changing the job?<br /> <strong>3.</strong> Explain in detail the current project. In depth information.<br /> <strong>4.</strong> Given a binary tree. Tell if all the leaves are at the same level. Code was required with proper handling of boundary cases.<br /> <strong>5.</strong> Discussed how the stock market works. Reached to:<br /> Design a data structure for storing the stock prices of various stocks. Make design such that update (new entry addition) of prices can be done efficiently. Also, it should be efficient to answer the queries like, â€œMaximum/minimum of stock prices of stocks s1, s2, s3 in the month of November 2012 etc.â€?</p>
+<p>Four days later I was informed that I was selected <img src="media/file4.gif" alt=":)" /></p>
+<p><strong>Following materials I used for preparation.</strong><br /> <strong>1.</strong> GeeksforGeeks<br /> <strong>2.</strong> Careercup<br /> <strong>3.</strong> Introduction to Algorithms(Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein)<br /> <strong>4.</strong> Algorithm Design [Jon Kleinberg, Ã‰va Tardos]</p>
+<p>This article is compiled by <strong>Shredder Woods</strong>. Many Many congratulations to Shredder for his selection. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-29" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-22/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-22/</a></p>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 8</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-8" class="section level1">
+<h1>Amazon Interview | Set 8</h1>
+<p>I recently interviewed with amazon for the position of SDE1 in their TRMS team. The interview procedure was unimaginable rigorous.<span id="more-26879"></span></p>
+<p>Here are the details</p>
+<p><strong>Round 0: Written Round</strong></p>
+<p>Interviewstreet Test – 2 questions to be done in 2 hours</p>
+<p><strong>Q1</strong>: Calculate the expression (2+3)*5 .. The question just said this .. I guess we had to make our own assumptions to solve the problem</p>
+<p><strong>Q2</strong>: Two trees can be called isomorphic if they have similar structure and the only difference amongst them can be is, that their child nodes may or may not be swaped..</p>
+<p>for example</p>
+<p>——4</p>
+<p>—-2—6</p>
+<p>–1–3–5–7</p>
+<p>and</p>
+<p>——4</p>
+<p>—-6—2</p>
+<p>–1–3–7–5</p>
+<p>are isomorphic .. the trees are similar and a few nodes have their left and right child swapped…</p>
+<p>Given two trees determine if they are isomorphic…</p>
+<p>The interviewstreet people marked the solution to my first question wrong even when it worked fine.. When I told the HR about the situation, she got it checked with some of the amazon guys and they were ok with it.</p>
+<p>I cleared the written test.</p>
+<p><strong>Telephonic Interview 1</strong></p>
+<p><strong>Q1</strong>: Find the Kth largest integer in a Binary Search Tree. When I told her the solution like the one given on geeks for geeks, she asked me to do it using recursion.</p>
+<p><strong>Q2</strong>: Given an array of positive integers, find the max no that can be formed by any permutation of the arrangement. I told her a logic. She then asked me to write just the comparison function to choose one number to put before the other.</p>
+<p>When I gave the interviewer straight answers, she twisted the question more.. Probably they wanted to see how i think and approach a problem.</p>
+<p><strong>Telephonic Interview 2</strong></p>
+<p><strong>Q1</strong>: A binary search tree is given with its two nodes interchanged. I had to find both the nodes.</p>
+<p><strong>Q2</strong>: Identify all the pythagorian triplets in the given array.</p>
+<p>I cleared this round. The HR told me I had to come over to Bangalore for in-person interviews. (all the travel arrangements were made by amazon itself)</p>
+<p><strong>Personal Interview 1</strong></p>
+<p><strong>Q1</strong>: Find the sum of continuous subarray within a one-dimensional array of numbers which has the largest sum .. I didnt know a solution (kadane’s algorithm), but somehow I was able to work it out in the interviews ..the interviewer liked my way of approaching and did help a little</p>
+<p><strong>Q2</strong>: How can you best implement queues using stacks. What would be the time complexity?</p>
+<p>was able to do this one quickly.</p>
+<p><strong>Personal Interview 2</strong></p>
+<p><strong>Q1:</strong> Find non-unique characters in a given string. I told her one O(n^2) [brute force], one O(n logn) [sort and then compare adjacent elements], and one O(n) [store the character count in an array] approach. She then asked me to do it in O(n) without using array.</p>
+<p>Clueless, she finally told me she wanted me to use BIT Vector. I wasnt well converse with Bit Vectors and I told her so.. She still asked me think more. Finally she told me a solution using the same which was impossible to think in the interview alone, especially when one didnt know what BIT Vectors were. She agreed when I stated the point and accepted my previous O(n) solution and we proceeded to the next question.</p>
+<p><strong>Q2:</strong> Given an array of integers, populate another array with the product of theÂ  elements of the first array except for the current index element.</p>
+<p>Here when I gave her a O(n) solution [find product and divide it with current element to get the number for this index position], she asked me to do it without the divide operator. Gave her a O(n^2) solution. But I couldnâ€™t think better. Finally just when she began to tell me an O(n) approach, I remembered the geeksforgeeks solution to the problemÂ  and gave it to her. Probably she didnâ€™t consider it. (donâ€™t know for sure)</p>
+<p><strong>Personal Interview 3</strong></p>
+<p>This interview was with the hiring manager at Amazon. He first asked me a couple of HR questions like Why Amazon? Why should we hire you? Projects, internships etc ..? How would you handle a disagreement with your team mates? Etcetc â€¦</p>
+<p>Then he asked me a programming question.</p>
+<p><strong>Q</strong>: He drew a circle on the board and marked a few points on it. Named them X1, X2, X3 ..</p>
+<p>Then he said these are gas stations, and you have to find the correct gas station from where a car should begin to loop in the circle such that it never runs out of gas before completing a round. He then sat on the table.</p>
+<p>(Sorry, but I will have to describe it in detail to tell you how it was put out to me.. and off-course to bring in more clarity to the question itself.. )</p>
+<p>Unclear about what I had to do exactly and what information was available, I asked him back a few questions.</p>
+<p>Why will car run out of gas after fuelling from lets say the first gas station?</p>
+<p>He said each gas station has limited amount of gas (lets say X1) and after fueling from this station it can run out of gas even before reaching the next station (anything could happen, it may be able to cross the next gas station but run out later before completing the round..).Â Â  So I have to find a gas station the car should start the loop from such that it never runs out of gas before completing the loop.</p>
+<p>So can the car refuel at the next available gas station, if its able to make up to it?</p>
+<p>Yes</p>
+<p>Do we have the information about the amount of gas required to reach from one petrol pump to another?</p>
+<p>Yes</p>
+<p>I made an assumption that the car tank was huge enough to fill as much gas as possible.</p>
+<p>And then I drew two arrays, one holding the amount of gas each station had, and other the amount of gas needed to go from this station to the next station..</p>
+<p>Fuel Available: X1, X2, X3, X4, X5</p>
+<p>Fuel Required to reach next station: Y1, Y2, Y3, Y4, Y5</p>
+<p>He said ok, and asked me to go ahead.</p>
+<p>I then took the difference (Y1-X1), (Y2-X2) ..and stored it in an array.. and then suddenlyÂ  it hit me that this became a simple problem of finding the maximum sum of a continuous subarray within an array (circular). He liked my approach and asked me to program it. Did it and showed him a dry run of the code I had written.Â  He was ok with it.</p>
+<p>(I felt good after the interview because in there I didnâ€™t stumble at all ..)</p>
+<p><strong>Personal Interview 4</strong></p>
+<p><strong>Q1:</strong> We have a huge file with braces â€˜()â€™ [just one type..] Find if they are balanced ..Â  (stacks wouldnâ€™t work here because you will probably run out of memory storing the stack ..) When I gave him another solution, he asked me to do it using parallel processes. I told him to elaborate more.. (to be honest I wasnâ€™t familiar with parallel processes) .. Finally I told him so ..and he asked me to think about it still ..</p>
+<p>We discussed it for about 20 minutes. Not reaching anywhere he moved on to ask me the next question.</p>
+<p><strong>Q2</strong>: Find the smallest substring which contains all the characters of the main string. Again I dint have a solution to this. I gave him a O(n^2) approach. He asked me to think further because the way I was approaching it was the way to go about it and I can make use of the last sub-solution obtained to improve my complexity. Couldnâ€™t think of anything, we finally moved on to the third question.</p>
+<p><strong>Q3</strong>: given the numerator and denominator of a fraction, find the quotient and the remainder without using divide and mod (â€˜/â€™, â€™%â€™ )operators. This was simple. I did it. He then asked to write the invariant of my solution which was denominator*quotient + remainder = numerator.</p>
+<p>He then asked me to think about the cases when either or both of numerator and denominator were negative. We were almost out of time so he didnâ€™t give me time to think and concluded the interview. He wanted me write an invariant that was true regardless of the input. Now that I think of it, I should have said |denominator|*quotient + remainder = |numerator|</p>
+<p>Flew back home in the night.</p>
+<p>2 Days later the HR informed me that I didnâ€™t make it in. <img src="media/file6.gif" alt=":(" /></p>
+<p>This was probably the most difficult of all the interviews I have ever had.</p>
+<p>Hope it helps some of you ..</p>
+<p>Thanks to <strong>ganglu</strong> for sharing Amazon Interview experience. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-15" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-8/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-8/</a></p>
+</div>
+</div>
+</body>
+</html>
+

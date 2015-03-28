@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 53 (For SDE-1)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-53-for-sde-1" class="section level1">
+<h1>Amazon Interview | Set 53 (For SDE-1)</h1>
+<p>In each round they ask me why I want to join amazon, why I am leaving my previous company with such a short span(around 2.5 months) and project stuff. <span id="more-123692"></span><br /> Interviewers were quite friendly. They would explain you till the point you fully don’t understand. And even while discussing approach and solving, they would clear your doubts if any.</p>
+<p><strong>Online Test on InterviewStreet</strong><br /> 1. Given 2 string , find whether 2nd is sub-string of 1st or not. (it would be great if you solve with KMP)<br /> 2. Given 2 rectangles , find whether they are overlapping or not.<br /> 3. Given list of coins with various values (unlimited coins of each type) , find how many ways you can make a given value. (DP was expected.) Since it was not guaranteed that coin of value 1 would be present , we have to return -1 if the given value is not possible.</p>
+<p>All rounds on same day.</p>
+<p><strong>1st f2f:</strong><br /> First I was ask to introduce myself and give a brief over my projects. Latter he ask me to explain any one of my project and the hardest task I have done.<br /> We have used infix to post ix and postfix evaluation for our generic search expression’s evaluation. Here we had a lot of discussion on why conversation from infix to post-fix was needed and all.</p>
+<p>1. Given a String s and int r , first fill each character row wise and print column wise.<br /> for e.g. String s = “abcdefgh” and r = 3<br /> so filling column wise would give :<br /> a d g<br /> b e h<br /> c f</p>
+<p>and final ans would be adgbehcf.<br /> he just wanted the exact output. Internally how we handle string was not concern.</p>
+<p>2. given a string or say number .. for e.g. 134 now with each number , as per mobile’s keypad , some letters would be associated.<br /> here 1 – &gt; abc , 3-&gt;ghi, 4 -&gt;jkl . So we should print all the permutation such that we take 1 character from each of the number.<br /> input number can be of any arbitrary length.<br /> lets say each digit has m numbers associated , then for the input of length n , we need to generate n^m possible strings.</p>
+<p>Took a map of which would return all the letters for the number. solved it using recursion. its quite similar to permutation of string. .<br /> Interviewer seemed quite impressed here.</p>
+<p><strong>2nd f2f</strong><br /> 1. Find integer part of sqrt of given number. Initially I gave o(root(n)) solution. Later solved with binary search(O(logn)).</p>
+<p>2. Given an array of integers. replace each number with next higher number on its right side , which is nearer.(if not present than keep it as it is.)<br /> for e.g. input – &gt; 3 4 6 1<br /> output-&gt;4 6 6 1</p>
+<p>I suggested we can traverse from right side , we will take extra array (o(n) space complexity here) and in that array , we would store index of next higher nearer number.<br /> so it would be like</p>
+<pre><code>if (a[i]
+Since we needed extra space to store indexes, he asked that the input is array of a structure which has number and higher Index, 2 fields. So that we don&#39;t need extra space and extra traversal.
+
+class Node {
+   int val;
+   int higher;
+}</code></pre>
+<p>He was very interested to see how i keep track of indexes and how i traverse between them. It is o(n) with o(1) space complexity. (when we have a[i]&gt;a[i+1] we don't do linear search , but we jump using the indexes, so its not o(n^2)) It was hard to convince him on complexity.</p>
+<p>3. given a binary tree. connect all the node at the same level. each node would have left,right and nextSibling pointers. we need to fill nextSibling.<br /> solved with level order traversal . Similar to BFS on tree with queue. Only approach was needed, no code for this one.</p>
+<p><strong>3rd f2f (Hiring Manager)</strong><br /> 1. It was a design question. You have to design a game. it has different types of monsters and different weapons. hero would shoot monster. each monster would have some initial health. Each weapon would do some predefined damage to monster. when its health gets 0, monster would die/disappear. and there would be multiple levels. based on level, monster and their behavior would change.</p>
+<p>2. Given a read only linked list with next and random pointer , clone the list. I told him that i know the solution and explained him the approach. It was with the use of hashmap and takes o(N) extra space. Then he ask me whether I know a o(1) space solution, since I didn't knew, i was told to solve this. With this , he told that I can modify link list.<br /> Initially I struggled, but with his help, in the end came up with working code. He was looking fine with implementation.</p>
+<p>Here I ask about the work culture and the process being followed at amazon.I ask lot of questions regarding tools and technology they use. Since I had work on scrum model , it was quite interesting. He seemed to be impressed here.</p>
+<p><strong>4th f2f(Dev Manager)</strong><br /> 1. Given 2 sorted linked list , merge them into single sorted list. Change the pointers, don't copy data. (same as merge part of mergesort on SLL)</p>
+<p>2. Given binary tree, connect all the nodes which are in same column. 1 caveat was that same 1 node can have 2 parents. Here as in example, node 7 is being pointed by 2 and 6.<br /> Solved it using level order traversal. Used a Map : columNo, Node. it would store the last visited node of that column. So whenever we visit a node, first we check if its corresponding column is present in hashmap. if not , it means its the first node of column, put into map. if the column present , then we will get the node stored in map and current node would be its nextVerticleSibling. and we update the map.<br /> He deed the dry run with example and code and he was OK with final approach.</p>
+<pre><code>        1
+       /   \
+      2     6
+     /  \   / \
+   3      7    8
+   /           /
+  4         12
+ / \           \
+5  9           13
+    \             \
+     10           14
+      \
+       11 </code></pre>
+<p>Finally after two days, I got call from HR that I am selected <img src="media/file4.gif" alt=":)" /></p>
+<p><br /> Many Many congratulations to the Priyank. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-59" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-53-sde-1/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-53-sde-1/</a></p>
+</div>
+</div>
+</body>
+</html>
+

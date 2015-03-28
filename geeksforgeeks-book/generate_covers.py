@@ -16,12 +16,13 @@ stopwords |= program_related
 
 
 def generate_cover(book_name, version):
-    epub_file = book_name + "/" + book_name + "_" + version+ ".epub"
+    html_file = book_name + "/" + book_name + "_" + version+ ".html"
+    #epub_file = book_name + "/" + book_name + "_" + version+ ".epub"
     plain_text = book_name + "/" + book_name + "_" + version+ ".txt"
     image_name = "covers/" + book_name + ".png"
 
     if not os.path.exists(plain_text):
-        call("pandoc " + epub_file + " -t plain -o " + plain_text, shell=True)
+        call("pandoc " + html_file + " -t plain -o " + plain_text, shell=True)
 
     text = open(plain_text).read()
     fig = plt.figure(frameon=False)

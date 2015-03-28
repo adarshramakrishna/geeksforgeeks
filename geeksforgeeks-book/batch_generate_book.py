@@ -14,5 +14,5 @@ if __name__ == "__main__":
         sys.exit()
     version = sys.argv[1]
     for dir_name in glob.glob('*'):
-        if os.path.isdir(dir_name) and dir_name != "covers":
+        if os.path.isdir(dir_name) and dir_name not in ["covers", "amazon"]:
             generate(dir_name, version)

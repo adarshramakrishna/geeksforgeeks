@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Count total set bits in all numbers from 1 to n</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="count-total-set-bits-in-all-numbers-from-1-to-n" class="section level1">
+<h1>Count total set bits in all numbers from 1 to n</h1>
+<p>Given a positive integer n, count the total number of set bits in binary representation of all numbers from 1 to n. <span id="more-16703"></span></p>
+<p>Examples:</p>
+<pre><code>Input: n = 3
+Output:  4
+
+Input: n = 6
+Output: 9
+
+Input: n = 7
+Output: 12
+
+Input: n = 8
+Output: 13</code></pre>
+<p>Source: <a href="http://geeksforgeeks.org/forum/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-17">Amazon Interview Question</a></p>
+<p><strong>Method 1 (Simple)</strong><br /> A simple solution is to run a loop from 1 to n and sum the count of set bits in all numbers from 1 to n.</p>
+<pre class="brush: cpp; highlight: [7,8,9,10,11,12,13,14,15,16]; title: ; notranslate" title=""><code>// A simple program to count set bits in all numbers from 1 to n.
+#include &lt;stdio.h&gt;
+
+// A utility function to count set bits in a number x
+unsigned int countSetBitsUtil(unsigned int x);
+
+// Returns count of set bits present in all numbers from 1 to n
+unsigned int countSetBits(unsigned int n)
+{
+    int bitCount = 0; // initialize the result
+
+    for(int i = 1; i &lt;= n; i++)
+       bitCount += countSetBitsUtil(i);
+
+    return bitCount;
+}
+
+// A utility function to count set bits in a number x
+unsigned int countSetBitsUtil(unsigned int x)
+{
+    if (x &lt;= 0)
+        return 0;
+    return (x %2 == 0? 0: 1) + countSetBitsUtil (x/2);
+}
+
+// Driver program to test above functions
+int main()
+{
+   int n = 4;
+   printf (&quot;Total set bit count is %d&quot;, countSetBits(n));
+   return 0;
+}</code></pre>
+<p>Output:</p>
+<pre><code>Total set bit count is 6</code></pre>
+<p>Time Complexity: O(nLogn)</p>
+<p><br /> <strong>Method 2 (Tricky)</strong><br /> If the input number is of the form 2^b -1 e.g., 1,3,7,15.. etc, the number of set bits is b * 2^(b-1). This is because for all the numbers 0 to (2^b)-1, if you complement and flip the list you end up with the same list (half the bits are on, half off).</p>
+<p>If the number does not have all set bits, then some position m is the position of leftmost set bit. The number of set bits in that position is n – (1</p>
+<p>1) The bits in the (m-1) positions down to the point where the leftmost bit becomes 0, and<br /> 2) The 2^(m-1) numbers below that point, which is the closed form above.</p>
+<p>An easy way to look at it is to consider the number 6:</p>
+<pre><code>0|0 0
+0|0 1
+0|1 0
+0|1 1
+-|–
+1|0 0
+1|0 1
+1|1 0</code></pre>
+<p>The leftmost set bit is in position 2 (positions are considered starting from 0). If we mask that off what remains is 2 (the “1 0″ in the right part of the last row.) So the number of bits in the 2nd position (the lower left box) is 3 (that is, 2 + 1). The set bits from 0-3 (the upper right box above) is 2*2^(2-1) = 4. The box in the lower right is the remaining bits we haven’t yet counted, and is the number of set bits for all the numbers up to 2 (the value of the last entry in the lower right box) which can be figured recursively.</p>
+<pre class="brush: cpp; highlight: [34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]; title: ; notranslate" title=""><code>// A O(Logn) complexity program to count set bits in all numbers from 1 to n
+#include &lt;stdio.h&gt;
+
+/* Returns position of leftmost set bit. The rightmost
+   position is considered as 0 */
+unsigned int getLeftmostBit (int n)
+{
+   int m = 0;
+   while (n  &gt; 1)
+   {
+      n = n &gt;&gt; 1;
+      m++;
+   }
+   return m;
+}
+
+/* Given the position of previous leftmost set bit in n (or an upper
+   bound on leftmost position) returns the new position of leftmost
+   set bit in n  */
+unsigned int getNextLeftmostBit (int n, int m)
+{
+   unsigned int temp = 1 &lt;&lt; m;
+   while (n  &lt; temp)
+   {
+      temp = temp &gt;&gt; 1;
+      m--;
+   }
+   return m;
+}
+
+// The main recursive function used by countSetBits()
+unsigned int _countSetBits(unsigned int n, int m);
+
+// Returns count of set bits present in all numbers from 1 to n
+unsigned int countSetBits(unsigned int n)
+{
+   // Get the position of leftmost set bit in n. This will be
+   // used as an upper bound for next set bit function
+   int m = getLeftmostBit (n);
+
+   // Use the position
+   return _countSetBits (n, m);
+}
+
+unsigned int _countSetBits(unsigned int n, int m)
+{
+    // Base Case: if n is 0, then set bit count is 0
+    if (n == 0)
+       return 0;
+
+    /* get position of next leftmost set bit */
+    m = getNextLeftmostBit(n, m);
+
+    // If n is of the form 2^x-1, i.e., if n is like 1, 3, 7, 15, 31,.. etc,
+    // then we are done.
+    // Since positions are considered starting from 0, 1 is added to m
+    if (n == ((unsigned int)1&lt;&lt;(m+1))-1)
+        return (unsigned int)(m+1)*(1&lt;&lt;m);
+
+    // update n for next recursive call
+    n = n - (1&lt;&lt;m);
+    return (n+1) + countSetBits(n) + m*(1&lt;&lt;(m-1));
+}
+
+// Driver program to test above functions
+int main()
+{
+   int n = 17;
+   printf (&quot;Total set bit count is %d&quot;, countSetBits(n));
+   return 0;
+}</code></pre>
+<pre><code>Total set bit count is 35</code></pre>
+<p>Time Complexity: O(Logn). From the first look at the implementation, time complexity looks more. But if we take a closer look, statements inside while loop of getNextLeftmostBit() are executed for all 0 bits in n. And the number of times recursion is executed is less than or equal to set bits in n. In other words, if the control goes inside while loop of getNextLeftmostBit(), then it skips those many bits in recursion.</p>
+<p>Thanks to <a href="http://geeksforgeeks.org/forum/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-17#post-34987">agatsu</a>and <a href="http://geeksforgeeks.org/forum/topic/amazon-interview-question-for-software-engineerdeveloper-0-2-years-about-algorithms-17#post-34436">IC</a> for suggesting this solution.</p>
+<p><strong>See <a href="http://www.geeksforgeeks.org/archives/16703#comment-9236">this</a>for another solution suggested by Piyush Kapoor.</strong></p>
+<p>Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a></p>
+<div id="source-6" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/count-total-set-bits-in-all-numbers-from-1-to-n/" class="uri">http://www.geeksforgeeks.org/count-total-set-bits-in-all-numbers-from-1-to-n/</a></p>
+</div>
+</div>
+</body>
+</html>
+

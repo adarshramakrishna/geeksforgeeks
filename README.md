@@ -73,10 +73,20 @@ You can contribute in many ways. Besides contributing code to this project. You 
 
 Every tag or category on `geeksforgeeks` can be turned into a book. So you are welcome to add more books.
 
-### Styles
+### Style
 
 The style for generating `epub` books is under `styles` subdirectory. `epub` books are styled via `css`. Welcome to submit your stylesheets.
 
+## What's new in 2.0
+
+### Bug fix
+
+1. All articles now have titles. [boilerpipy][6]  
+2. Encoding problem has been fixed.
+
+## New book
+
+3. A book of Amazon interview questions under `goodies/interview_questions`
 
 
 ## License

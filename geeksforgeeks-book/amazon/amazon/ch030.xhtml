@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview | Set 21</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-set-21" class="section level1">
+<h1>Amazon Interview | Set 21</h1>
+<p>Recently I have gone through 10 rounds of interviews of my dream company Amazon for SDE1 and I got selected. My only resource and library for preparation was GeeksforGeeks, which is the best website for tech preparation,<span id="more-114782"></span> if you aim for big shots like Amazon, Microsoft, etc. I was not too confident to attend interviews. The interview experiences blog gave me courage and coding experience to crack all rounds. Please do follow this site for every update, and suggest your friends to follow if they try for job change and if they aim for big companies.</p>
+<p>I am sharing my interview experience, which will help others.<br /> Total rounds : 10<br /> 1 online written test + 4 telephonic + 5 F2F screening rounds.<br /> In F2F rounds, for every problem complete executable code + algorithm will be expected.<br /> In all rounds , best solution will be expected (with less complexity)</p>
+<p><strong>Online Written Test:</strong><br /> 1. Find maximum frequent numbers in an array. If there are more numbers with maximum frequency, they display all numbers in ascending order. Ascending order is important.</p>
+<p>2. Two numbers represented as linked lists. (Bigger than integers). Return a linked list which is the product of the given two linked lists.<br /> 1-&gt;2-&gt;3-&gt;Null (123)<br /> 2-&gt;3-Null (23)<br /> O/P: 2-&gt;8-&gt;2-&gt;9-&gt;Null</p>
+<p><br /> <strong>1st Phone Screening (45min):</strong><br /> 1. Find a linked list has circle in it, If it has loop, find origin of the loop.</p>
+<p>2. In Linked list, Node has two pointers, one points to next node, other points to arbitrary node in the linked list. Write a function to return a new list which is clone of the given linked list.</p>
+<p>3. An array is sorted and rotated by k times. Find an element in an array. (efficient and logarithmic time solution is expected)</p>
+<p><br /> <strong>2nd Phone Screening(45min):</strong><br /> 1. Two strings s1,s2 are given as input. Remove characters present in s1 which are there in s2.</p>
+<p>2. How to find number of subsets in a set.</p>
+<p>3. Searching an element in 2D matrix which is sorted in row wise and column wise.<br /> 1 2 3 4<br /> 2 3 4 5<br /> 3 4 5 6<br /> 4 5 6 7<br /> 5 6 7 8 Find an element in it.</p>
+<p>4. Difference between merge sort and quick sort. How do you improve quicksort (think about in selecting pivot element).</p>
+<p>5. Give a scenario for quick sort in worst case.</p>
+<p>6. How to store a set in memory, what ADTs do we use and what are tradeoffs for each ADT.</p>
+<p><br /> <strong>3rd Phone Screening(35min):</strong><br /> 1. N-Petrol bunk problem: There are n petrol bunks located in a circle. We have a truck which runs 1 km per 1 liter (mileage 1kmpl). Two arrays are given. The distances between petrol bunks are given in one array. Other array contains the no of liters available at each petrol bunk. We have to find the starting point such that if we start at that point , you we would able to visit entire circle without running out of fuel. Initially truck has no fuel.</p>
+<p>2. Reverse linked list in groups of size k.<br /> I/P: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;Null k = 3<br /> O/P: 3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4-&gt;8-&gt;7-&gt;Null</p>
+<p><br /> <strong>4th Round(35min):</strong><br /> 1. Algorithm to construct a tree given Pre and In order traversals.</p>
+<p>2. Inorder successor of a tree.</p>
+<p>3. Threaded binary tree(inorder without recursion)</p>
+<p><br /> <strong>F2F Round 1 (with Hiring manager 60+ min):</strong><br /> 1. Tell me about yourself and Projects you worked.</p>
+<p>2. About the most critical situation in the project you went through. How you did it. ( he needs complete explanation of the scenario)</p>
+<p>3. If he gives the same scenario as an interview question, how will you improve code quality and its complexity.</p>
+<p>4. About SDLC you followed. Which one do you like and why.</p>
+<p>5. Do you have any questions to ask ( very important one- ask something about projects they work, etc. Good sign )</p>
+<p><br /> <strong>F2F Round 2 (with Developer 60 min):</strong><br /> 1. Tell me about yourself.</p>
+<p>2. Zigzag traversal of binary tree. (more optimal solution is expected from you).Complete code should be written and they will check later.</p>
+<p>3. A robot is there in 2D space, which can move to its left direction. You are given with an array which are moves of robot, which starts from origin(0,0). Find the rectangle covered by it.<br /> I/P: { 2,3,4,5,6,1,3,5,5} starts at (0,0)<br /> O/P: rectangle points: ( -4,4 ) to (4,-2)<br /> 4. Casual discussion about hiring process.</p>
+<p><br /> <strong>F2F Round 3 (with Developer 50min):</strong><br /> 1. Data structure which does insertion, deleting latest item, find min, find max in O(1) time. (Gave hash, 2-D, linked list, many .. He impressed lot here)</p>
+<p>2. Vertical sum of a tree. (Column wise sum â€“ can find same one in geeksforgeeks)</p>
+<p>3. Find n-th digit in the continues sorted stream of data.<br /> I/P: {1,2,3,4,5,6,7,8,9,1,0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1,8â€¦â€¦â€¦ infinite} n =28<br /> O/P: 28th digit<br /> Complexity analysis of all the above.</p>
+<p><br /> <strong>F2F Round 4 (with Developer 45 min):</strong><br /> 1. Print matrix spirally.<br /> 1 2 3 4 5<br /> 6 7 8 9 10<br /> 11 12 13 14 15<br /> 16 17 18 19 20<br /> 21 22 23 24 25<br /> O/P: 1 2 3 4 5 10 15 20 25 24 23 22 21 16 11 6 6 8 9 14 19 18 17 12 13 18</p>
+<p>2. Write a function to check syntax of opening and closing braces whether they are proper or not.</p>
+<p>3. Same question if you have k types of braces( â€˜(â€˜ â€˜[â€˜ â€˜{â€˜ ,â€¦. K types) All are of same priority.</p>
+<p>4. Same question if you have k types of braces( â€˜(â€˜ â€˜[â€˜ â€˜{â€˜ ,â€¦. K types) All are of diff priority.</p>
+<p>5. Print all valid combinations of k number of pairs of braces.</p>
+<p>6. Return count of above combinations without using algorithm for printing them.</p>
+<p>7. Memoziation â€“do you know about it. Explain me.</p>
+<p><br /> <strong>F2F Round5 (Bar Raiser round) 60min:</strong><br /> 1. Leader ship principles followed by Amazon</p>
+<p>2. About project.</p>
+<p>3. Why you are leaving prev company, What will stop you there.</p>
+<p>4. Set of strings are given in a dictionary order. The problem here is order is not as our alphabetical. It may be different. C may come before a,b, x may come before d,c. etc. You will have to find the order of characters by using given input. (topological sort â€“ complete code is required to write)</p>
+<p>5. Binary search tree into Sorted doubly linked list (Expected Inplace algorithm)</p>
+<p><br /> <strong>Things to keep in mind:</strong><br /> 1.For every problem, give one simple solution first (may have more time complexity) and think for optimal solution.</p>
+<p>2.Write a code in clear manner. It should be understandable without your explanation.</p>
+<p>3.In a position to tell complexity for code you are going to write.</p>
+<p>4.First tell the algorithm or approach and proceed with writing code.</p>
+<p>5.Do not hesitate to ask for clarification. They will impress.</p>
+<p>Thatâ€™s all from my side. Best of luck.</p>
+<p>Thanks again for GeeksforGeeks, a lovable website for techies.</p>
+<p>This article is compiled by <strong>Ranganath</strong>. Many Many congratulations to Ranganath for his selection. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a>, <a href="http://www.geeksforgeeks.org/tag/interview-experience/">Interview Experience</a></p>
+<div id="source-28" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-set-21/" class="uri">http://www.geeksforgeeks.org/amazon-interview-set-21/</a></p>
+</div>
+</div>
+</body>
+</html>
+

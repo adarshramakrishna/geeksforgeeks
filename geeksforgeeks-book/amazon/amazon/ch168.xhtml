@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Amazon Interview Experience | Set 160 (For SDE 2)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body>
+<div id="amazon-interview-experience-set-160-for-sde-2" class="section level1 post-title">
+<h1>Amazon Interview Experience | Set 160 (For SDE 2)</h1>
+<p>Amazon sde2 experience:<span id="more-133251"></span></p>
+<p><strong><br /> Telephonic round :</strong><br /> Design a site similar to junglee.com. Assume you are given a crawler, design a distributed system , what ds will you use , some basic api’s etc.</p>
+<p><strong>Onsite:</strong></p>
+<p><strong>coding round 1:</strong><br /> 1. zig zag traversal of binary tree O(n) algo<br /> 2. matrix question:<br /> given matrix like :</p>
+<p>a b e d<br /> b c f e<br /> a b d d<br /> ….</p>
+<p>find the longest path of consecutive alphabets given a starting alphabet. You can move in all 8 directions. for eg. a-&gt;b(right)-&gt;c(down)-&gt;d(diagnal down)… len = 4 , find max such len</p>
+<p><strong>coding round 2:</strong><br /> 1. is binary tree balanced : O(n) time algo<br /> 2. given a pre and post order kindof a traversal (2 arrays) create an n-ary treee out of it with struct of the form :</p>
+<pre><code>
+struct node {
+   int data;
+   struct node *child[MAX];
+   int child_num;
+}</code></pre>
+<p>did it using a hash table of linked lists and storing parents . Might be a btr way not sure.</p>
+<p><strong><br /> design round + hiring mgr 3:</strong></p>
+<p>Design the most recently viewed item for amazon , say 15 most recently viewed item which are scrollable for millions of products and users . scalable and extensible model. give apis , distributed systems, caching , reduce latency : critical</p>
+<p><strong>design round 4:</strong><br /> 1. Give Object oriented design for the snake game (that was in old nokia phones) . only class and obj diag was needed, no code/implementation. it should have extensibility to accomodate different types of fruits, (eg one gives + 5 len + 10 pts) it should be scalable to diff platforms</p>
+<p>2. Give an architecture diagram with all entities and relationships of a multi user wysiwyg editor . basically a web interface to multiple authors who can edit and store their docs . multiple ppl should be able to save it at once . also ownership should be present for documents.</p>
+<p>If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.</p>
+<p>   </p>
+<p>Tags: <a href="http://www.geeksforgeeks.org/tag/amazon/">Amazon</a></p>
+<div id="source-165" class="section level3">
+<h3>Source</h3>
+<p><a href="http://www.geeksforgeeks.org/amazon-interview-experience-set-160-sde-2/" class="uri">http://www.geeksforgeeks.org/amazon-interview-experience-set-160-sde-2/</a></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>
+

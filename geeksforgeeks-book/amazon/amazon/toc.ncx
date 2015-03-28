@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:cdc5dc81-1e5c-4553-891f-5640b7b4dffc" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+    <meta name="cover" content="amazon_png" />
+  </head>
+  <docTitle>
+    <text>Amazon</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-0">
+      <navLabel>
+        <text></text>
+      </navLabel>
+      <content src="title_page.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-1">
+      <navLabel>
+        <text>Copyright</text>
+      </navLabel>
+      <content src="ch001.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-2">
+      <navLabel>
+        <text>[TopTalent.in] Interview with Sujeet Gholap, placed in Microsoft, Google, Samsung, Goldman Sachs &amp; Tower Research</text>
+      </navLabel>
+      <content src="ch002.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-3">
+      <navLabel>
+        <text>[TopTalent.in] Exclusive Interview with Vivek Ruparel who got into Amazon</text>
+      </navLabel>
+      <content src="ch003.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-4">
+      <navLabel>
+        <text>[TopTalent.in] Interview with Pradeep Verma from NIT Trichy who talks about his internship at Amazon</text>
+      </navLabel>
+      <content src="ch004.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-5">
+      <navLabel>
+        <text>[TopTalent.in] Google, Facebook, Amazon, Walmart &amp; PocketGems, All Fighting For Prasoon Mishra</text>
+      </navLabel>
+      <content src="ch005.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-6">
+      <navLabel>
+        <text>Convert a BST to a Binary Tree such that sum of all greater keys is added to every key</text>
+      </navLabel>
+      <content src="ch006.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-7">
+      <navLabel>
+        <text>Amazon telephonic interview questions for SDE 1</text>
+      </navLabel>
+      <content src="ch007.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-8">
+      <navLabel>
+        <text>Count total set bits in all numbers from 1 to n</text>
+      </navLabel>
+      <content src="ch008.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-9">
+      <navLabel>
+        <text>Amazon Interview | Set 1</text>
+      </navLabel>
+      <content src="ch009.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-10">
+      <navLabel>
+        <text>Amazon Interview | Set 6</text>
+      </navLabel>
+      <content src="ch010.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-11">
+      <navLabel>
+        <text>Amazon Interview | Set 2</text>
+      </navLabel>
+      <content src="ch011.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-12">
+      <navLabel>
+        <text>Amazon Interview | Set 28</text>
+      </navLabel>
+      <content src="ch012.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-13">
+      <navLabel>
+        <text>Amazon Interview | Set 3</text>
+      </navLabel>
+      <content src="ch013.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-14">
+      <navLabel>
+        <text>Amazon Interview | Set 4</text>
+      </navLabel>
+      <content src="ch014.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-15">
+      <navLabel>
+        <text>Amazon Interview | Set 5</text>
+      </navLabel>
+      <content src="ch015.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-16">
+      <navLabel>
+        <text>Amazon Interview | Set 9</text>
+      </navLabel>
+      <content src="ch016.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-17">
+      <navLabel>
+        <text>Amazon Interview | Set 8</text>
+      </navLabel>
+      <content src="ch017.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-18">
+      <navLabel>
+        <text>Amazon Interview | Set 9 (Answers)</text>
+      </navLabel>
+      <content src="ch018.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-19">
+      <navLabel>
+        <text>Amazon Interview | Set 10</text>
+      </navLabel>
+      <content src="ch019.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-20">
+      <navLabel>
+        <text>Amazon Interview | Set 11</text>
+      </navLabel>
+      <content src="ch020.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-21">
+      <navLabel>
+        <text>Amazon Interview | Set 12</text>
+      </navLabel>
+      <content src="ch021.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-22">
+      <navLabel>
+        <text>Amazon Interview | Set 15</text>
+      </navLabel>
+      <content src="ch022.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-23">
+      <navLabel>
+        <text>Amazon Interview | Set 13</text>
+      </navLabel>
+      <content src="ch023.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-24">
+      <navLabel>
+        <text>Amazon Interview | Set 14</text>
+      </navLabel>
+      <content src="ch024.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-25">
+      <navLabel>
+        <text>Amazon Interview | Set 16</text>
+      </navLabel>
+      <content src="ch025.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-26">
+      <navLabel>
+        <text>Amazon Interview | Set 17</text>
+      </navLabel>
+      <content src="ch026.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-27">
+      <navLabel>
+        <text>Amazon Interview | Set 18</text>
+      </navLabel>
+      <content src="ch027.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-28">
+      <navLabel>
+        <text>Amazon Interview | Set 19</text>
+      </navLabel>
+      <content src="ch028.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-29">
+      <navLabel>
+        <text>Amazon Interview | Set 20</text>
+      </navLabel>
+      <content src="ch029.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-30">
+      <navLabel>
+        <text>Amazon Interview | Set 21</text>
+      </navLabel>
+      <content src="ch030.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-31">
+      <navLabel>
+        <text>Amazon Interview | Set 22</text>
+      </navLabel>
+      <content src="ch031.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-32">
+      <navLabel>
+        <text>Amazon Interview | Set 23</text>
+      </navLabel>
+      <content src="ch032.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-33">
+      <navLabel>
+        <text>Amazon Interview | Set 24</text>
+      </navLabel>
+      <content src="ch033.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-34">
+      <navLabel>
+        <text>Amazon Interview | Set 25</text>
+      </navLabel>
+      <content src="ch034.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-35">
+      <navLabel>
+        <text>Amazon Interview | Set 26</text>
+      </navLabel>
+      <content src="ch035.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-36">
+      <navLabel>
+        <text>Amazon Interview | Set 27</text>
+      </navLabel>
+      <content src="ch036.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-37">
+      <navLabel>
+        <text>Amazon Interview | Set 29</text>
+      </navLabel>
+      <content src="ch037.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-38">
+      <navLabel>
+        <text>Amazon Interview | Set 30</text>
+      </navLabel>
+      <content src="ch038.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-39">
+      <navLabel>
+        <text>Amazon Interview | Set 31</text>
+      </navLabel>
+      <content src="ch039.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-40">
+      <navLabel>
+        <text>Amazon Interview | Set 32</text>
+      </navLabel>
+      <content src="ch040.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-41">
+      <navLabel>
+        <text>Amazon Interview | Set 33</text>
+      </navLabel>
+      <content src="ch041.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-42">
+      <navLabel>
+        <text>Amazon Interview | Set 34</text>
+      </navLabel>
+      <content src="ch042.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-43">
+      <navLabel>
+        <text>Amazon Interview | Set 35</text>
+      </navLabel>
+      <content src="ch043.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-44">
+      <navLabel>
+        <text>Amazon Interview | Set 36</text>
+      </navLabel>
+      <content src="ch044.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-45">
+      <navLabel>
+        <text>Amazon Interview | Set 37</text>
+      </navLabel>
+      <content src="ch045.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-46">
+      <navLabel>
+        <text>Amazon Interview | Set 38 (SDE-I)</text>
+      </navLabel>
+      <content src="ch046.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-47">
+      <navLabel>
+        <text>Amazon Interview | Set 39 (SDE)</text>
+      </navLabel>
+      <content src="ch047.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-48">
+      <navLabel>
+        <text>Amazon Interview | Set 40 (On-Campus Round 1)</text>
+      </navLabel>
+      <content src="ch048.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-49">
+      <navLabel>
+        <text>Amazon Interview | Set 41 (On–campus)</text>
+      </navLabel>
+      <content src="ch049.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-50">
+      <navLabel>
+        <text>Amazon Interview | Set 42 (On-Campus)</text>
+      </navLabel>
+      <content src="ch050.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-51">
+      <navLabel>
+        <text>Amazon Interview | Set 43 (On-Campus)</text>
+      </navLabel>
+      <content src="ch051.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-52">
+      <navLabel>
+        <text>Amazon Interview | Set 44 (For Internship)</text>
+      </navLabel>
+      <content src="ch052.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-53">
+      <navLabel>
+        <text>Amazon Interview | Set 45 (For Internship)</text>
+      </navLabel>
+      <content src="ch053.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-54">
+      <navLabel>
+        <text>Amazon Interview | Set 46 (On-campus for Internship)</text>
+      </navLabel>
+      <content src="ch054.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-55">
+      <navLabel>
+        <text>Amazon Interview | Set 47 (Off-campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch055.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-56">
+      <navLabel>
+        <text>Amazon Interview | Set 48 (On-campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch056.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-57">
+      <navLabel>
+        <text>Amazon Interview | Set 49 (On-campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch057.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-58">
+      <navLabel>
+        <text>Amazon Interview | Set 50 (On-campus for SDE)</text>
+      </navLabel>
+      <content src="ch058.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-59">
+      <navLabel>
+        <text>Amazon Interview | Set 51 (On-campus for SDET)</text>
+      </navLabel>
+      <content src="ch059.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-60">
+      <navLabel>
+        <text>Amazon Interview | Set 52 (For Internship)</text>
+      </navLabel>
+      <content src="ch060.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-61">
+      <navLabel>
+        <text>Amazon Interview | Set 53 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch061.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-62">
+      <navLabel>
+        <text>Amazon Interview | Set 54 (For Internship)</text>
+      </navLabel>
+      <content src="ch062.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-63">
+      <navLabel>
+        <text>Amazon Interview | Set 54 (On Campus for SDE)</text>
+      </navLabel>
+      <content src="ch063.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-64">
+      <navLabel>
+        <text>Amazon Interview | Set 55 (On-Campus)</text>
+      </navLabel>
+      <content src="ch064.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-65">
+      <navLabel>
+        <text>Amazon Interview | Set 56 (Off-Campus)</text>
+      </navLabel>
+      <content src="ch065.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-66">
+      <navLabel>
+        <text>Amazon Interview | Set 57 (Off-Campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch066.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-67">
+      <navLabel>
+        <text>Amazon Interview | Set 58 (On-campus for Software Development Engineer)</text>
+      </navLabel>
+      <content src="ch067.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-68">
+      <navLabel>
+        <text>Amazon Interview | Set 59 (Off-campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch068.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-69">
+      <navLabel>
+        <text>Amazon Interview | Set 60 (For Internship)</text>
+      </navLabel>
+      <content src="ch069.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-70">
+      <navLabel>
+        <text>Amazon Interview | Set 61 (For Internship)</text>
+      </navLabel>
+      <content src="ch070.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-71">
+      <navLabel>
+        <text>Amazon Interview | Set 62 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch071.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-72">
+      <navLabel>
+        <text>Amazon Interview | Set 63 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch072.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-73">
+      <navLabel>
+        <text>Amazon Interview | Set 64 (Off-Campus for SDE)</text>
+      </navLabel>
+      <content src="ch073.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-74">
+      <navLabel>
+        <text>Amazon Interview | Set 65 (Off-Campus for SDE-2)</text>
+      </navLabel>
+      <content src="ch074.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-75">
+      <navLabel>
+        <text>Amazon Interview | Set 66 (For SDE)</text>
+      </navLabel>
+      <content src="ch075.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-76">
+      <navLabel>
+        <text>Amazon Interview | Set 67 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch076.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-77">
+      <navLabel>
+        <text>Amazon Interview | Set 68 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch077.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-78">
+      <navLabel>
+        <text>Amazon Interview | Set 69 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch078.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-79">
+      <navLabel>
+        <text>Amazon Interview | Set 70 (On-Campus For Internship)</text>
+      </navLabel>
+      <content src="ch079.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-80">
+      <navLabel>
+        <text>Amazon Interview | Set 71 (For SDE-2)</text>
+      </navLabel>
+      <content src="ch080.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-81">
+      <navLabel>
+        <text>Amazon Interview | Set 72 (Off campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch081.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-82">
+      <navLabel>
+        <text>Amazon Interview | Set 73 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch082.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-83">
+      <navLabel>
+        <text>Amazon Interview | Set 74</text>
+      </navLabel>
+      <content src="ch083.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-84">
+      <navLabel>
+        <text>Amazon Interview | Set 75 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch084.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-85">
+      <navLabel>
+        <text>Amazon Interview | Set 76 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch085.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-86">
+      <navLabel>
+        <text>Amazon Interview | Set 77 (Off-Campus For SDE-1)</text>
+      </navLabel>
+      <content src="ch086.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-87">
+      <navLabel>
+        <text>Amazon Interview | Set 78</text>
+      </navLabel>
+      <content src="ch087.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-88">
+      <navLabel>
+        <text>Amazon Interview | Set 79 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch088.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-89">
+      <navLabel>
+        <text>Amazon Interview | Set 80</text>
+      </navLabel>
+      <content src="ch089.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-90">
+      <navLabel>
+        <text>Amazon Interview | Set 81 (For SDE-I)</text>
+      </navLabel>
+      <content src="ch090.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-91">
+      <navLabel>
+        <text>Amazon Interview | Set 82 (For SDE-2)</text>
+      </navLabel>
+      <content src="ch091.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-92">
+      <navLabel>
+        <text>Amazon Interview | Set 83</text>
+      </navLabel>
+      <content src="ch092.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-93">
+      <navLabel>
+        <text>Amazon Interview | Set 84</text>
+      </navLabel>
+      <content src="ch093.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-94">
+      <navLabel>
+        <text>Amazon Interview | Set 85</text>
+      </navLabel>
+      <content src="ch094.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-95">
+      <navLabel>
+        <text>Amazon Interview | Set 87 (For SDE)</text>
+      </navLabel>
+      <content src="ch095.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-96">
+      <navLabel>
+        <text>Amazon Interview | Set 86</text>
+      </navLabel>
+      <content src="ch096.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-97">
+      <navLabel>
+        <text>Amazon Interview | Set 88</text>
+      </navLabel>
+      <content src="ch097.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-98">
+      <navLabel>
+        <text>Amazon Interview | Set 89</text>
+      </navLabel>
+      <content src="ch098.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-99">
+      <navLabel>
+        <text>Amazon Interview | Set 90</text>
+      </navLabel>
+      <content src="ch099.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-100">
+      <navLabel>
+        <text>Amazon Interview | Set 91</text>
+      </navLabel>
+      <content src="ch100.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-101">
+      <navLabel>
+        <text>Amazon Interview | Set 93</text>
+      </navLabel>
+      <content src="ch101.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-102">
+      <navLabel>
+        <text>Amazon Interview | Set 95 (For SDE-I)</text>
+      </navLabel>
+      <content src="ch102.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-103">
+      <navLabel>
+        <text>Amazon Interview | Set 96 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch103.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-104">
+      <navLabel>
+        <text>Amazon Interview | Set 97 (On-Campus for SDE1)</text>
+      </navLabel>
+      <content src="ch104.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-105">
+      <navLabel>
+        <text>Amazon Interview | Set 98 (On-Campus)</text>
+      </navLabel>
+      <content src="ch105.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-106">
+      <navLabel>
+        <text>Amazon Interview | Set 99 (On-Campus)</text>
+      </navLabel>
+      <content src="ch106.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-107">
+      <navLabel>
+        <text>Amazon Interview | Set 100 (On-Campus)</text>
+      </navLabel>
+      <content src="ch107.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-108">
+      <navLabel>
+        <text>Amazon Interview | Set 101 (On-Campus)</text>
+      </navLabel>
+      <content src="ch108.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-109">
+      <navLabel>
+        <text>Amazon Interview | Set 102</text>
+      </navLabel>
+      <content src="ch109.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-110">
+      <navLabel>
+        <text>Amazon Interview | Set 103 (On-Campus)</text>
+      </navLabel>
+      <content src="ch110.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-111">
+      <navLabel>
+        <text>Amazon Interview | Set 104</text>
+      </navLabel>
+      <content src="ch111.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-112">
+      <navLabel>
+        <text>Amazon Interview | Set 105 (On-Campus)</text>
+      </navLabel>
+      <content src="ch112.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-113">
+      <navLabel>
+        <text>Amazon Interview | Set 106 (On Campus for Internship)</text>
+      </navLabel>
+      <content src="ch113.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-114">
+      <navLabel>
+        <text>Amazon Interview | Set 107 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch114.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-115">
+      <navLabel>
+        <text>Amazon Interview | Set 108 (On-Campus)</text>
+      </navLabel>
+      <content src="ch115.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-116">
+      <navLabel>
+        <text>Amazon Interview | Set 109 (On-Campus)</text>
+      </navLabel>
+      <content src="ch116.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-117">
+      <navLabel>
+        <text>Amazon Interview | Set 110 (On-Campus)</text>
+      </navLabel>
+      <content src="ch117.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-118">
+      <navLabel>
+        <text>Amazon Interview | Set 111 (On-Campus)</text>
+      </navLabel>
+      <content src="ch118.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-119">
+      <navLabel>
+        <text>Amazon Interview | Set 112 (On-Campus)</text>
+      </navLabel>
+      <content src="ch119.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-120">
+      <navLabel>
+        <text>Amazon Interview | Set 113 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch120.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-121">
+      <navLabel>
+        <text>Amazon Interview | Set 114 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch121.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-122">
+      <navLabel>
+        <text>Amazon Interview | Set 115 (On-Campus)</text>
+      </navLabel>
+      <content src="ch122.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-123">
+      <navLabel>
+        <text>Amazon Interview | Set 116 (On-Campus)</text>
+      </navLabel>
+      <content src="ch123.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-124">
+      <navLabel>
+        <text>Amazon Interview | Set 117 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch124.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-125">
+      <navLabel>
+        <text>Amazon Interview | Set 118 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch125.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-126">
+      <navLabel>
+        <text>Amazon Interview | Set 119 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch126.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-127">
+      <navLabel>
+        <text>Amazon Interview | Set 120 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch127.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-128">
+      <navLabel>
+        <text>Amazon Interview | Set 121 (On-Campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch128.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-129">
+      <navLabel>
+        <text>Amazon Interview | Set 122 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch129.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-130">
+      <navLabel>
+        <text>Amazon Interview | Set 123 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch130.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-131">
+      <navLabel>
+        <text>Amazon Interview | Set 124 (On-Campus)</text>
+      </navLabel>
+      <content src="ch131.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-132">
+      <navLabel>
+        <text>Amazon Interview | Set 125 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch132.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-133">
+      <navLabel>
+        <text>Amazon Interview experience | Set 127 (For Internship)</text>
+      </navLabel>
+      <content src="ch133.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-134">
+      <navLabel>
+        <text>Amazon Interview experience | Set 126 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch134.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-135">
+      <navLabel>
+        <text>Amazon Interview experience | Set 128 (For SDET)</text>
+      </navLabel>
+      <content src="ch135.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-136">
+      <navLabel>
+        <text>Amazon interview Experience | Set 129 (For SDE 1 Off-Campus)</text>
+      </navLabel>
+      <content src="ch136.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-137">
+      <navLabel>
+        <text>Amazon interview Experience | Set 130 (For SDET 1)</text>
+      </navLabel>
+      <content src="ch137.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-138">
+      <navLabel>
+        <text>Amazon interview Experience | Set 131 (For SDET 1)</text>
+      </navLabel>
+      <content src="ch138.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-139">
+      <navLabel>
+        <text>Amazon interview Experience | Set 132 (For SDE Intern)</text>
+      </navLabel>
+      <content src="ch139.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-140">
+      <navLabel>
+        <text>Amazon interview Experience | Set 133</text>
+      </navLabel>
+      <content src="ch140.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-141">
+      <navLabel>
+        <text>Amazon interview Experience | Set 134 (Off-Campus for SDE)</text>
+      </navLabel>
+      <content src="ch141.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-142">
+      <navLabel>
+        <text>Amazon interview Experience | Set 135 (On-Campus for SDE)</text>
+      </navLabel>
+      <content src="ch142.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-143">
+      <navLabel>
+        <text>Amazon interview Experience | Set 136 (For SDE-T)</text>
+      </navLabel>
+      <content src="ch143.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-144">
+      <navLabel>
+        <text>Amazon interview Experience | Set 137 (Assessment test for SDE)</text>
+      </navLabel>
+      <content src="ch144.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-145">
+      <navLabel>
+        <text>Amazon interview Experience | Set 138 (For SDE 1)</text>
+      </navLabel>
+      <content src="ch145.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-146">
+      <navLabel>
+        <text>Amazon interview Experience | Set 139</text>
+      </navLabel>
+      <content src="ch146.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-147">
+      <navLabel>
+        <text>Amazon interview Experience | Set 140 (Experienced for SDE)</text>
+      </navLabel>
+      <content src="ch147.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-148">
+      <navLabel>
+        <text>Amazon interview Experience | Set 141 (For SDE1)</text>
+      </navLabel>
+      <content src="ch148.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-149">
+      <navLabel>
+        <text>Amazon interview Experience | Set 142 (Off-Campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch149.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-150">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 143 (Off-Campus for SDE-1)</text>
+      </navLabel>
+      <content src="ch150.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-151">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 144 (Off-Campus For SDE-1)</text>
+      </navLabel>
+      <content src="ch151.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-152">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 145 (Off-Campus)</text>
+      </navLabel>
+      <content src="ch152.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-153">
+      <navLabel>
+        <text>First round</text>
+      </navLabel>
+      <content src="ch153.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-154">
+      <navLabel>
+        <text>Second round</text>
+      </navLabel>
+      <content src="ch154.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-155">
+      <navLabel>
+        <text>Amazon Interview Questions | Set 147</text>
+      </navLabel>
+      <content src="ch155.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-156">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 148</text>
+      </navLabel>
+      <content src="ch156.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-157">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 149 (On-Campus for Internship)</text>
+      </navLabel>
+      <content src="ch157.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-158">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 150 (SDE1 for 1 Year Experienced)</text>
+      </navLabel>
+      <content src="ch158.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-159">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 151 (For SDE)</text>
+      </navLabel>
+      <content src="ch159.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-160">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 152 (Kindle Team SDE-1 )</text>
+      </navLabel>
+      <content src="ch160.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-161">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 153 (For SDE1)</text>
+      </navLabel>
+      <content src="ch161.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-162">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 154 (For SDE2)</text>
+      </navLabel>
+      <content src="ch162.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-163">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 155 (On-Campus)</text>
+      </navLabel>
+      <content src="ch163.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-164">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 156 (On-Campus)</text>
+      </navLabel>
+      <content src="ch164.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-165">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 157 (On-Campus)</text>
+      </navLabel>
+      <content src="ch165.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-166">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 158 (Off-Campus)</text>
+      </navLabel>
+      <content src="ch166.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-167">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 159 (Off-Campus)</text>
+      </navLabel>
+      <content src="ch167.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-168">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 160 (For SDE 2)</text>
+      </navLabel>
+      <content src="ch168.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-169">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 161 (Off Campus for SDE-1, Banglore)</text>
+      </navLabel>
+      <content src="ch169.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-170">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 162</text>
+      </navLabel>
+      <content src="ch170.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-171">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 163 (For SDE II)</text>
+      </navLabel>
+      <content src="ch171.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-172">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 164 (For SDE I)</text>
+      </navLabel>
+      <content src="ch172.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-173">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 165 (For SDE I)</text>
+      </navLabel>
+      <content src="ch173.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-174">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 166 (For SDE I)</text>
+      </navLabel>
+      <content src="ch174.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-175">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 167 (SDE I for 1 year 6 months experience)</text>
+      </navLabel>
+      <content src="ch175.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-176">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 168</text>
+      </navLabel>
+      <content src="ch176.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-177">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 169 (For SDE 2)</text>
+      </navLabel>
+      <content src="ch177.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-178">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 170</text>
+      </navLabel>
+      <content src="ch178.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-179">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 171</text>
+      </navLabel>
+      <content src="ch179.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-180">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 173 (On-Campus)</text>
+      </navLabel>
+      <content src="ch180.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-181">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 174 (For SDE)</text>
+      </navLabel>
+      <content src="ch181.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-182">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 175 (For SDE)</text>
+      </navLabel>
+      <content src="ch182.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-183">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 176 (For SDE 1)</text>
+      </navLabel>
+      <content src="ch183.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-184">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 177 (First Round in Pool Campus)</text>
+      </navLabel>
+      <content src="ch184.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-185">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 178 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch185.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-186">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 179 (For SDE-1)</text>
+      </navLabel>
+      <content src="ch186.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-187">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 180 (Telephonic Interview )</text>
+      </navLabel>
+      <content src="ch187.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-188">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 181 (For SDE 1)</text>
+      </navLabel>
+      <content src="ch188.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-189">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 182 (For SDET 1)</text>
+      </navLabel>
+      <content src="ch189.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-190">
+      <navLabel>
+        <text>Amazon Interview Experience | Set 183 (SDE - New Grad Position)</text>
+      </navLabel>
+      <content src="ch190.xhtml" />
+    </navPoint>
+  </navMap>
+</ncx>
