@@ -8,9 +8,9 @@
 1. All articles now have titles. So table of content shows all articles.
 2. Encoding problem has been fixed.
 
-## New book
+### New book
 
-3. A book of Amazon interview questions under `goodies/interview_questions`
+A book of Amazon interview questions under `goodies/interview_questions`
 
 
 
