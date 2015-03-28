@@ -5,7 +5,7 @@
 
 ### Bug fix
 
-1. All articles now have titles. [boilerpipy][6]  
+1. All articles now have titles. So table of content shows all articles.
 2. Encoding problem has been fixed.
 
 ## New book
