@@ -1,5 +1,8 @@
-# Geeksforgeeks/leetcode Articles As Books, 2.0
+# Geeksforgeeks/leetcode Articles As Books
 
+## Site
+
+To read random post, head to [gfgreader.info](gfgreader.info).
 
 ## What's new in 2.0
 
@@ -28,11 +31,11 @@ Book covers are made of word clouds based on the book content using [word_cloud]
 
 ## Books
 
-Right now we have 16 books under `goodies/geeksforgeeks` and one book under `goodies/leetcode`
+Look under subdirectory `goodies`.
 
 ## Tools
 
-Want to create a book from the `geeksforgeeks` site yourself? No problem. But you'll need some tools to get started. Apart from `Python 2` you also need those.
+Want to create a book from the `geeksforgeeks` site yourself? No problem. But you'll need some tools to get started. Apart from `Python 2.x` you also need the following tools.
 
 
 ### 1. Scrapy
@@ -44,7 +47,9 @@ Install it with `pip install scrapy`
 ### 2. Boilerpipy
 
 So you have the html files locally. But those html files have many other stuff you don't want. You only want... goodies.
-No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with. However, I've found that it also removes the title of an article sometimes.
+No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with.
+
+However, I've found that it also removes the title of an article sometimes.
 
 
 ### 3. Pandoc

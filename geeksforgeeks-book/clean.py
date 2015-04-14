@@ -57,6 +57,11 @@ def clean(file_name, directory="."):
         ad_by_google.getparent().remove(ad_by_google)
     for bad_h3 in body_doc.xpath("//h3"):
         bad_h3.getparent().remove(bad_h3)
+    for pre_tag in body_doc.xpath("//pre"):
+        if 'class' in pre_tag.attrib:
+            pre_tag.attrib.pop('class')
+        if 'title' in pre_tag.attrib:
+            pre_tag.attrib.pop('title')
 
     post_content_doc = body_doc.xpath("//div[@class='post-content']")[0]
     post_content_doc.append(lxml.etree.XML(source_header_string))
@@ -64,6 +69,7 @@ def clean(file_name, directory="."):
     basename = os.path.basename(file_name)
     cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
     result = html.tostring(body_doc)
+    result = result.replace('<pre>', '<pre> <code>').replace('</pre>', '</code> </pre>')
     with open(directory + cleaned_file, 'w') as cleaned_file_handle:
         cleaned_file_handle.write(result.encode('utf-8'))
 

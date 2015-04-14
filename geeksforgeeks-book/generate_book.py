@@ -11,9 +11,11 @@ from generate_covers import generate_cover
 
 def custom_comparator(name1, name2):
     numbers1 = re.findall("\d+", name1)
+    numbers2 = re.findall("\d+", name2)
+    if not numbers1 and not numbers2:
+        return name1 > name2
     if not numbers1:
         return -1
-    numbers2 = re.findall("\d+", name2)
     if not numbers2:
         return -1
     return int(numbers1[0])-int(numbers2[0])
@@ -24,7 +26,7 @@ def generate(book, version):
         book = book + "/"
     version = "_" + version
     print "cleaning html files,", "this might take a while..."
-    clean_html_files(book)
+    #clean_html_files(book)
     cleaned_html = sorted(glob.glob(book + "*_cleaned.html"), cmp=custom_comparator)
     md_file = book + book[:-1] + version + ".md"
     html_file = book + book[:-1] + version + ".html"
