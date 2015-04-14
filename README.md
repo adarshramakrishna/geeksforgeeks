@@ -17,9 +17,9 @@ To read random post, head to [gfgreader.info](http://www.gfgreader.info/).
 2. Several pdf books have been generated.
 
 
+## Books
 
-Have you ever wished you could read the awesome stuff on [geeksforgeeks.org][1] or [leetcode.com](http://leetcode.com/) offline right on your
-iPad? Or on your Kindle/Kindle App? Well, now you have it. Look under the directory `goodies` and do the world some good with your algorithmic prowess 😄
+Look under subdirectory `goodies`. Each book under `geeksforgeeks` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under leetcode is generated from the articles on [leetcode.com](http://leetcode.com/).
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
 
@@ -29,10 +29,6 @@ Book covers are made of word clouds based on the book content using [word_cloud]
 ![On Ipad](https://s-media-cache-ak0.pinimg.com/originals/1d/28/d3/1d28d3e3148d2c91d22e837ace64c0ce.jpg)
 
 ![On Kindle App](https://s-media-cache-ak0.pinimg.com/originals/2b/86/53/2b8653eff7aaa191a80263de32c29651.jpg)
-
-## Books
-
-Look under subdirectory `goodies`.
 
 ## Tools
 
@@ -50,18 +46,18 @@ Install it with `pip install scrapy`
 So you have the html files locally. But those html files have many other stuff you don't want. You only want... goodies.
 No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with.
 
-However, I've found that it also removes the title of an article sometimes.
+However, I've found that it also removes the title of an article sometimes. So I had to do some post-processing with `lxml` after to add the title back.
 
 
 ### 3. Pandoc
 
-[Pandoc][3] is just super. It's used here to convert html files or markdown files to epub files. But it can do so **much** more. It's also super easy to generate `pdf` versions of the books if you want. You should definitely check it out.
+[Pandoc][3] is used to convert html files or markdown files to epub, pdf and docx files. The latex engine used in Pandoc can't handle gif images so only a few pdf books have been generated so far.
 
 ### 4. Kindlegen
 
 You'll need [kindlegen][4] to generate `mobi` files so you can read on your beloved Kindle or Kindle App. Download it from the linked Amazon webpage and install.
 
-You just need to use `kindlegen awesome.epub` and it'll give you a file called `awesome.mobi`. Awesome, right?
+You just need to use `kindlegen awesome.epub` and it'll give you a file called `awesome.mobi`.
 
 ## How To
 
@@ -81,7 +77,7 @@ Yay! Done!
 
 ### Style the books
 
-Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` tag, for instance, will style the code of the `epub` books.
+Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` and `code` tag, for instance, will style the code of the `epub` books.
 
 ## Contribute
 
@@ -91,7 +87,7 @@ You can contribute in many ways. Besides contributing code to this project. You 
 
 ### Book
 
-Every tag or category on `geeksforgeeks` can be turned into a book. So you are welcome to add more books.
+Every tag or category on `geeksforgeeks.org` can be turned into a book. So you are welcome to add/suggest more books.
 
 ### Style
 
@@ -99,19 +95,19 @@ The style for generating `epub` books is under `styles` subdirectory. `epub` boo
 
 ## License
 
-The content in the books *doesn't* belong to me. I created the books so other people and me can read them offline on iPad or Kindle, and for a better reading experience.
+The content in the books *doesn't* belong to me. I created the books so other people and me can read them offline on iPad or Kindle, and (hopefully) for a better reading experience.
 
 The content on geeksforgeeks.org is licensed under Creative Commons
-Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7]
+Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7].
 
 The content on `leetcode` belongs to the site.
 
 The code in this project is licensed under Apache License, Version 2.0. See the
-license [here][8]
+license [here][8].
 
 ## Authors
 
-Jing Zhou, gnijuohz at gmail.com
+Jing Zhou, gnijuohz at gmail.com.
 
 
 [1]:http://www.geeksforgeeks.org/
