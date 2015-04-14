@@ -1,10 +1,10 @@
-# Geeksforgeeks/leetcode Articles As Books
+# Geeksforgeeks as Books
 
 ## Site
 
-To read random post, head to [gfgreader.info](gfgreader.info).
+To read random post, head to [gfgreader.info](http://www.gfgreader.info/).
 
-## What's new in 2.0
+## What's new
 
 ### Bug fix
 
@@ -13,7 +13,8 @@ To read random post, head to [gfgreader.info](gfgreader.info).
 
 ### New book
 
-A book of Amazon interview questions under `goodies/interview_questions`
+1. A book of Amazon interview questions under `goodies/interview_questions`
+2. Several pdf books have been generated.
 
 
 
