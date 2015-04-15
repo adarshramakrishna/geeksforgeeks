@@ -1,25 +1,8 @@
 # Geeksforgeeks as Books
 
-## Site
-
-To read random post, head to [gfgreader.info](http://www.gfgreader.info/).
-
-## What's new
-
-### Bug fix
-
-1. All articles now have titles. So table of content shows all articles.
-2. Encoding problem has been fixed.
-
-### New book
-
-1. A book of Amazon interview questions under `goodies/interview_questions`
-2. Several pdf books have been generated.
-
-
 ## Books
 
-Look under subdirectory `goodies`. Each book under `geeksforgeeks` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under leetcode is generated from the articles on [leetcode.com](http://leetcode.com/).
+Books are in the directory called `goodies`. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
 
@@ -32,58 +15,41 @@ Book covers are made of word clouds based on the book content using [word_cloud]
 
 ## Tools
 
-Want to create a book from the `geeksforgeeks` site yourself? No problem. But you'll need some tools to get started. Apart from `Python 2.x` you also need the following tools.
+If you want to generate books yourself. Here is an incomplete guide.
 
+### Requirements
 
-### 1. Scrapy
+1. install [Scrapy][2]. It's is used to download webpages from `geeksforgeeks` and `leetcode`. It follows the next page link and downloads webpages.
 
-[Scrapy][2] is used to download webpages from `geeksforgeeks` and `leetcode`. It makes it super easy to do so with its rules.
+    Install it with `pip install scrapy`. I created two separate scrapy projects called `geeksforgeeks` and `leetcode` to download wepages from the sites.
 
-Install it with `pip install scrapy`
+2. [lxml][10] and [Boilerpipy][6] (or [BeautifulSoup][11]). After downloading the html files, you need to extract the articles from them, I'm using `Boilerpipy` because it can handle webpages with different layout. But if you are only interested in the `geeksforgeeks` site, you can just use `lxml` to extract the articles. It will probably be faster too.
 
-### 2. Boilerpipy
+    `Boilerpipy` also removes the title of an article sometimes. So I had to do some post-processing with `lxml` after to add the title back.
 
-So you have the html files locally. But those html files have many other stuff you don't want. You only want... goodies.
-No problem. Check out [boilerpipy][6], it can remove all the unnecessary stuff like header and comments, leaving you with only the article itself. It has the functionality of Pocket or Readability you might be familiar with.
+3. [Pandoc][3]. It's used to convert html files or markdown files to epub, pdf and docx format files. The latex engine used in Pandoc can't handle gif images so only a few pdf books have been generated so far.
 
-However, I've found that it also removes the title of an article sometimes. So I had to do some post-processing with `lxml` after to add the title back.
-
-
-### 3. Pandoc
-
-[Pandoc][3] is used to convert html files or markdown files to epub, pdf and docx files. The latex engine used in Pandoc can't handle gif images so only a few pdf books have been generated so far.
-
-### 4. Kindlegen
-
-You'll need [kindlegen][4] to generate `mobi` files so you can read on your beloved Kindle or Kindle App. Download it from the linked Amazon webpage and install.
-
-You just need to use `kindlegen awesome.epub` and it'll give you a file called `awesome.mobi`.
+4. [kindlegen][4] is needed to generate `mobi` files for reading on Kindle or the Kindle App.
+5. [WordCloud][5]. The book covers are generated with `wordcloud` with a bit of meta in mind.
 
 ## How To
 
-### 1. Crawling with Scrpay
-Go to the `geeksforgeeks` subdirectory and run commands *like* `scrapy crawl geeksforgeeks -a category=category -a name=name`.
+1. **Crawling with Scrpay.** Go to the `geeksforgeeks` subdirectory and run commands *like* `scrapy crawl geeksforgeeks -a category=category -a name=name`.
 
-For example, running `scrapy crawl geeksforgeeks -a category=tag -a name=pattern-searching` will crawl from the page `http://www.geeksforgeeks.org/tag/pattern-searching/`. category and name are two arguments our spider takes. On geeksforgeeks, things can be organized by `tag` or `category`. Specify the category/tag and the name, Scrapy will do the rest for you.
+    For example, running `scrapy crawl geeksforgeeks -a category=tag -a name=pattern-searching` will crawl from the page `http://www.geeksforgeeks.org/tag/pattern-searching/`. category and name are two arguments the spider takes. On geeksforgeeks, things can be organized by `tag` or `category`. Specify the category/tag and the name, Scrapy will do the rest for you.
 
+2. **Generate a book.** Now go into the `geeksforgeeks-books` subdirectory and you should be able to find a directory called `pattern-searching`. Now run `python generate_book.py pattern-searching 1.0`. It will clean the html files, concatenate the cleaned files into one html file, then use `pandoc` to create an epub and pdf format files from the it. In the end a mobi file is created using `kindlegen`.
 
-### 2. Generate a book  
-
-Following the example in 1, now go into the `geeksforgeeks-books` subdirectory and you should be able to find a directory called `pattern-searching`. Now run `python generate_book.py pattern-searching`. It will first clean the html files, concatenate the cleaned files into one, then use `pandoc` to create an epub file from the markdown file. In the end a mobi file is created using `kindlegen`.
-
-Yay! Done!
 
 ## To Do
 
 ### Style the books
+Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` and `<code>`, for instance, will style the code of the `epub` books.
 
-Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` and `code` tag, for instance, will style the code of the `epub` books.
+### Generate pdf format books
+Convert `gif` images to `png` and use them so `pandoc` can handle them.
 
 ## Contribute
-
-I've only worked on this project for a few days since I had the idea. It has huge room to improve. It's the first time I used `Scrapy` and `pandoc`.  
-
-You can contribute in many ways. Besides contributing code to this project. You are more than welcome to contribute in the following ways.
 
 ### Book
 
@@ -105,6 +71,10 @@ The content on `leetcode` belongs to the site.
 The code in this project is licensed under Apache License, Version 2.0. See the
 license [here][8].
 
+## Random Reading Site
+
+If you are interested in reading some random posts from [geeksforgeeks.org][1] to have something to think about when feeling bored, head to [gfgreader.info][9].
+
 ## Authors
 
 Jing Zhou, gnijuohz at gmail.com.
@@ -114,7 +84,10 @@ Jing Zhou, gnijuohz at gmail.com.
 [2]:http://scrapy.org/
 [3]:http://johnmacfarlane.net/pandoc/
 [4]:http://www.amazon.com/gp/feature.html?docId=1000765211
-[5]:https://github.com/gnijuohz/boilerpipy
+[5]:https://github.com/amueller/word_cloud
 [6]:https://github.com/harshavardhana/boilerpipy
 [7]:http://creativecommons.org/licenses/by-nc-nd/2.5/in/deed.en_US
 [8]:http://www.apache.org/licenses/LICENSE-2.0
+[9]:http://www.gfgreader.info/
+[10]:http://lxml.de/
+[11]:http://www.crummy.com/software/BeautifulSoup/

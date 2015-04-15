@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-clean local html files via boilerpipy. the tool removes the title of an article occasionally.
+clean local html files 
 """
 
 import glob
@@ -29,7 +29,7 @@ def clean(file_name, directory="."):
 
     head_pos = content.find('<head>')
 
-    # HERE is the key: insert the encoding of the file and everything works out ;)
+    # insert the encoding of the file
     content = content[:head_pos+6] + '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">' + content[head_pos+6:]
     article = Extractor(content, loglevel = logging.INFO).extracted()
 
@@ -69,6 +69,7 @@ def clean(file_name, directory="."):
     basename = os.path.basename(file_name)
     cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
     result = html.tostring(body_doc)
+    # replace <code> with <code><pre> for stying later.
     result = result.replace('<pre>', '<pre> <code>').replace('</pre>', '</code> </pre>')
     with open(directory + cleaned_file, 'w') as cleaned_file_handle:
         cleaned_file_handle.write(result.encode('utf-8'))
