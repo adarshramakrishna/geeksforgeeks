@@ -1,8 +1,9 @@
 # Geeksforgeeks as Books
 
 ## Books
+To get the latest version of the books, see the [latest release][12].
 
-Books are in the directory called `goodies`. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
+They are also in the `goodies` directory. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
 
 Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
 
@@ -91,3 +92,4 @@ Jing Zhou, gnijuohz at gmail.com.
 [9]:http://www.gfgreader.info/
 [10]:http://lxml.de/
 [11]:http://www.crummy.com/software/BeautifulSoup/
+[12]:https://github.com/gnijuohz/geeksforgeeks-as-books/releases/latest
