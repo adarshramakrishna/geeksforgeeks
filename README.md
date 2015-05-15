@@ -62,7 +62,7 @@ The style for generating `epub` books is under `styles` subdirectory. `epub` boo
 
 ## License
 
-The content in the books *doesn't* belong to me. I created the books so other people and me can read them offline on iPad or Kindle, and (hopefully) for a better reading experience.
+The content in the books *doesn't* belong to me. I created the books so that I can read them offline on iPad or Kindle, and (hopefully) for a better reading experience.
 
 The content on geeksforgeeks.org is licensed under Creative Commons
 Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7].
