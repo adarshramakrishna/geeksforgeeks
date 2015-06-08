@@ -14,6 +14,12 @@ Book covers are made of word clouds based on the book content using [word_cloud]
 
 ![On Kindle App](https://s-media-cache-ak0.pinimg.com/originals/2b/86/53/2b8653eff7aaa191a80263de32c29651.jpg)
 
+## Website
+
+Now you can visit [gfgreader.info](http://gfgreader.info/) to read the articles! It's optimized for mobile devices.  
+You can also log into the site with Facebook to star questions.
+
+
 ## Tools
 
 If you want to generate books yourself. Here is an incomplete guide.
