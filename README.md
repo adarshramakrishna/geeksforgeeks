@@ -73,18 +73,21 @@ The content in the books *doesn't* belong to me. I created the books so that I c
 The content on geeksforgeeks.org is licensed under Creative Commons
 Attribution-NonCommercial-NoDerivs 2.5 India. See the license [here][7].
 
-The content on `leetcode` belongs to the site.
+The copyright of the content on `leetcode` belongs to the site and its owner.
 
-The code in this project is licensed under Apache License, Version 2.0. See the
+The code in this project is licensed under Apache License, version 2.0. See the
 license [here][8].
 
-## Random Reading Site
-
-If you are interested in reading some random posts from [geeksforgeeks.org][1] to have something to think about when feeling bored, head to [gfgreader.info][9].
 
 ## Authors
 
 Jing Zhou, gnijuohz at gmail.com.
+
+## Issues
+
+You can report issue right here or send me an email about it.
+
+如发现任何问题，欢迎骚扰 ;)
 
 
 [1]:http://www.geeksforgeeks.org/
