@@ -5,18 +5,13 @@ To get the latest version of the books, see the [latest release][12].
 
 They are also in the `goodies` directory. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
 
-Here's how the books look like in the iBooks App and Kindle App on my iPad. Kindle hasn't been tested.
+## Apps
 
-![Book covers](https://s-media-cache-ak0.pinimg.com/originals/25/15/f5/2515f556de2b199d4af8a8aacdebc7c3.jpg)
-Book covers are made of word clouds based on the book content using [word_cloud](https://github.com/amueller/word_cloud)  
-
-![On Ipad](https://s-media-cache-ak0.pinimg.com/originals/1d/28/d3/1d28d3e3148d2c91d22e837ace64c0ce.jpg)
-
-![On Kindle App](https://s-media-cache-ak0.pinimg.com/originals/2b/86/53/2b8653eff7aaa191a80263de32c29651.jpg)
+An app is available on [iTunes Store](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8). It makes reading on mobile devices easier. Right now you can login with Facebook and star articles but you still need to connect to the Internet. Offline reading is planned for the next version.
 
 ## Website
 
-Now you can visit [gfgreader.info](http://gfgreader.info/) to read the articles! It's optimized for mobile devices.  
+You can also visit [gfgreader.info](http://gfgreader.info/) to read the articles! It's optimized for mobile devices.  
 You can also log into the site with Facebook to star questions.
 
 
