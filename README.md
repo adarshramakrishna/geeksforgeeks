@@ -1,5 +1,11 @@
 # Geeksforgeeks as Books
 
+## Note
+
+The site [Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized itself for mobile devices. This project started when the old geeksforgeeks site was clumsy.
+
+The books in this project are expected to be updated in July, 2015.
+
 ## Books
 To get the latest version of the books, see the [latest release][12].
 
