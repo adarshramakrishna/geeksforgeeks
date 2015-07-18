@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-clean local html files 
+clean local html files
 """
 
 import glob
@@ -63,7 +63,7 @@ def clean(file_name, directory="."):
         if 'title' in pre_tag.attrib:
             pre_tag.attrib.pop('title')
 
-    post_content_doc = body_doc.xpath("//div[@class='post-content']")[0]
+    post_content_doc = body_doc.xpath("//div[@class='entry-content']")[0]
     post_content_doc.append(lxml.etree.XML(source_header_string))
     post_content_doc.append(lxml.etree.XML(source_link))
     basename = os.path.basename(file_name)
@@ -75,7 +75,7 @@ def clean(file_name, directory="."):
         cleaned_file_handle.write(result.encode('utf-8'))
 
 def clean_html_files(directory = ""):
-    for html_file in glob.glob(directory + '*.html'):
+    for html_file in sorted(glob.glob(directory + '*.html'), key=os.path.getmtime):
         if 'clean' not in html_file:
             try:
                 clean(html_file, directory)

@@ -16,7 +16,7 @@ class GFGSpider(CrawlSpider):
     allowed_domains = ['geeksforgeeks.org']
     rules = (Rule (LinkExtractor(restrict_xpaths=('//a[@class="nextpostslink"]',))
         , follow= True),
-        Rule(LinkExtractor(restrict_xpaths=('//h2[@class="post-title"]/a',)), callback='parse_item'),
+        Rule(LinkExtractor(restrict_xpaths=('//h2[@class="entry-title"]/a',)), callback='parse_item'),
     )
     def __init__(self, category='tag', name='dynamic-programming', *args, **kwargs):
         super(GFGSpider, self).__init__(*args, **kwargs)
