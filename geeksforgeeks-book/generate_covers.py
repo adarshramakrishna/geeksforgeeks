@@ -15,16 +15,15 @@ stopwords |= single_letters
 stopwords |= program_related
 
 
-def generate_cover(book_name, version):
-    html_file = book_name + "/" + book_name + "_" + version+ ".html"
-    #epub_file = book_name + "/" + book_name + "_" + version+ ".epub"
-    plain_text = book_name + "/" + book_name + "_" + version+ ".txt"
+def generate_cover(book_name):
+    html_file = book_name + "/" + book_name + ".html"
+    plain_text = book_name + "/" + book_name + ".txt"
     image_name = "covers/" + book_name + ".png"
 
     if not os.path.exists(plain_text):
         call("pandoc " + html_file + " -t plain -o " + plain_text, shell=True)
 
-    text = open(html_file).read()
+    text = open(plain_text).read()
     fig = plt.figure(frameon=False)
     fig.set_size_inches(4, 6)
     ax = plt.Axes(fig, [0., 0., 1., 1.])
@@ -38,10 +37,5 @@ def generate_cover(book_name, version):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
-        generate_cover(sys.argv[1], sys.argv[2])
-    elif len(sys.argv) == 2:
-        version = sys.argv[1]
-        for dir_name in glob.glob('*'):
-            if os.path.isdir(dir_name) and dir_name != "covers":
-                generate_cover(dir_name, version)
+    if len(sys.argv) == 2:
+        generate_cover(sys.argv[1])

@@ -25,9 +25,7 @@ class GFGSpider(CrawlSpider):
         self.doc_name = name
 
     def parse_item(self, response):
-        self.log('Hi, this is an item page! %s' % response.url)
-        #item = GeeksforgeeksItem()
-        #item['url'] = response.url
+        self.log('An item page: %s' % response.url)
         if not os.path.exists(self.dest):
             os.makedirs(self.dest)
         with open(self.dest + 'metadata.xml', 'w') as metadata:

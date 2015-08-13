@@ -11,9 +11,11 @@ To get the latest version of the books, see the [latest release][12].
 
 They are also in the `goodies` directory. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
 
-## Apps
+## App
 
-An app is available on [iTunes Store](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8). It makes reading on mobile devices easier. Right now you can login with Facebook and star articles but you still need to connect to the Internet. Offline reading is planned for the next version.
+An app is available on [iTunes Store](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8). It aims to make reading on iOS devices easier.
+
+Send feedback about the app to geekreader.app@gmail.com to make it better.
 
 ## Website
 

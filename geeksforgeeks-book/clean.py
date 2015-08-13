@@ -69,7 +69,7 @@ def clean(file_name, directory="."):
     basename = os.path.basename(file_name)
     cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
     result = html.tostring(body_doc)
-    # replace <code> with <code><pre> for stying later.
+    # replace <code> with <code><pre> for styling later.
     result = result.replace('<pre>', '<pre> <code>').replace('</pre>', '</code> </pre>')
     with open(directory + cleaned_file, 'w') as cleaned_file_handle:
         cleaned_file_handle.write(result.encode('utf-8'))
