@@ -24,7 +24,10 @@ def insert_content(doc, html_doc, insert_string, insert_type):
     return doc
 
 def clean(file_name, directory="."):
-
+    cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
+    # don't clean files that already have been cleaned
+    if os.path.isfile(cleaned_file):
+        return
     content = codecs.open(file_name, "r", 'utf-8').read()
 
     head_pos = content.find('<head>')
@@ -67,7 +70,6 @@ def clean(file_name, directory="."):
     post_content_doc.append(lxml.etree.XML(source_header_string))
     post_content_doc.append(lxml.etree.XML(source_link))
     basename = os.path.basename(file_name)
-    cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
     result = html.tostring(body_doc)
     # replace <code> with <code><pre> for styling later.
     result = result.replace('<pre>', '<pre> <code>').replace('</pre>', '</code> </pre>')
