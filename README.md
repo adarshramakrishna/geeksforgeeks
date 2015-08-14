@@ -11,9 +11,7 @@ They are also in the `goodies` directory. Each book under `geeksforgeeks-books` 
 
 ## App
 
-An app is available on [iTunes Store](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8). It aims to make reading on iOS devices easier.
-
-Send feedback about the app to geekreader.app@gmail.com to make it better.
+You can also read up on [GeekReader](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8) on your iOS devices. Be sure to send your feedback about the app to geekreader.app@gmail.com to make it better. This app just got started. Features and wishes are welcome.
 
 ## Tools
 
