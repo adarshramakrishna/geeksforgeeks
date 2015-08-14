@@ -4,8 +4,6 @@
 
 The site [Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized itself for mobile devices. This project started when the old geeksforgeeks site was clumsy.
 
-The books in this project are expected to be updated in July, 2015.
-
 ## Books
 To get the latest version of the books, see the [latest release][12].
 
@@ -16,12 +14,6 @@ They are also in the `goodies` directory. Each book under `geeksforgeeks-books` 
 An app is available on [iTunes Store](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8). It aims to make reading on iOS devices easier.
 
 Send feedback about the app to geekreader.app@gmail.com to make it better.
-
-## Website
-
-You can also visit [gfgreader.info](http://gfgreader.info/) to read the articles! It's optimized for mobile devices.  
-You can also log into the site with Facebook to star questions.
-
 
 ## Tools
 

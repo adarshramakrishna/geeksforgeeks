@@ -22,7 +22,10 @@ def generate(book):
     cleaned_html = sorted(glob.glob(book + "*_cleaned.html"))
     print "generating", html_file, "..."
     call("cat " + "../bookcopyright/copyright.html " + " ".join(cleaned_html) + " > " + html_file, shell=True)
-    generate_cover(book[:-1])
+    try:
+        generate_cover(book[:-1])
+    except:
+        print "can't generate cover for", book[:-1]
     call('pandoc --latex-engine=xelatex ' + html_file + ' -o ' + html_file.replace('html', 'docx'), shell=True)
     print "generating", epub_file, "this might take a while..."
     call(['pandoc', '-o', epub_file, html_file, '--epub-metadata='+book+'metadata.xml', "--toc", "--toc-depth=2", "--epub-stylesheet=../styles/buttondown.css", "-f", "html-native_divs", "--epub-cover-image="+cover_image])
