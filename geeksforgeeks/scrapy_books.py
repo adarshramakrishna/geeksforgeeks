@@ -9,6 +9,5 @@ def scrapy_all():
             if book_name in {"advance-data-structures", "backtracking", "amazon", "Array", "BinarySearchTree", "divide-and-conquer", "dynamic-programming", "Greedy-Algorithm", "Hashing", "Heap", "LinkedList", "MathematicalAlgo", "Matrix", "microsoft", "Misc", "pattern-searching", "Queue", "recursion", "Stack", "tree-travera"}:
                 call('scrapy crawl geeksforgeeks -a name=' + book_name + ' -a category=tag', shell=True)
             else:
-                continue
-                # call('scrapy crawl geeksforgeeks -a name=' + book_name + ' -a category=category', shell=True)
+                call('scrapy crawl geeksforgeeks -a name=' + book_name + ' -a category=category', shell=True)
 scrapy_all()

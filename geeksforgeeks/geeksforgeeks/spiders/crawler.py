@@ -20,7 +20,7 @@ class GFGSpider(CrawlSpider):
     )
     def __init__(self, category='tag', name='dynamic-programming', *args, **kwargs):
         super(GFGSpider, self).__init__(*args, **kwargs)
-        self.dest = "../geeksforgeeks-book/" + name + "/"
+        self.dest = os.path.abspath('..') + "/geeksforgeeks-book/" + name + "/"
         self.start_urls = ['http://www.geeksforgeeks.org/' + category + '/' + name]
         self.doc_name = name
 
@@ -28,11 +28,8 @@ class GFGSpider(CrawlSpider):
         self.log('An item page: %s' % response.url)
         if not os.path.exists(self.dest):
             os.makedirs(self.dest)
-        with open(self.dest + 'metadata.xml', 'w') as metadata:
-            metadata.write('<dc:title>'+" ".join(self.doc_name.title().split('-'))+'</dc:title>\n<dc:language>en-US</dc:language>\n<dc:date opf:event="publication">2015-2-19</dc:date>\n<dc:rights>Creative Commons Attribution-NonCommercial-NoDerivs 2.5 India (CC BY-NC-ND 2.5 IN)</dc:rights>')
-        """
-        call(['wget', '-O', self.dest + response.url.split('/')[-2] + ".html", response.url])
-        """
+            with open(self.dest + 'metadata.xml', 'w') as metadata:
+                metadata.write('<dc:title>'+" ".join(self.doc_name.title().split('-'))+'</dc:title>\n<dc:language>en-US</dc:language>\n<dc:date opf:event="publication">2015-2-19</dc:date>\n<dc:rights>Creative Commons Attribution-NonCommercial-NoDerivs 2.5 India (CC BY-NC-ND 2.5 IN)</dc:rights>')
         with codecs.open(self.dest + response.url.split('/')[-2] + ".html", 'w', 'utf-8') as file_handle:
             file_handle.write(response.body_as_unicode())
         #return item

@@ -8,11 +8,9 @@ from clean import clean_html_files
 from generate_covers import generate_cover
 
 def generate(book):
-    """
-    generate books in epub and
-    """
     if book[-1] != "/":
         book = book + "/"
+    print("generating " + book[:-1])
     md_file = book + book[:-1]  + ".md"
     html_file = book + book[:-1]  + ".html"
     epub_file = book + book[:-1]  + ".epub"
