@@ -3,6 +3,7 @@ import os
 import sys
 import glob
 from subprocess import call
+from datetime import datetime
 
 from clean import clean_html_files
 from generate_covers import generate_cover
@@ -17,7 +18,7 @@ def generate(book):
     cover_image = "covers/" + book[:-1] + ".png"
     print "cleaning html files,", "this might take a while..."
     clean_html_files(book)
-    cleaned_html = sorted(glob.glob(book + "*_cleaned.html"))
+    cleaned_html = sorted(glob.glob(book + "*_cleaned.html"), key=lambda x: datetime.strptime(x.split('_')[-2], '%Y-%m-%dT%H:%M:%S'))
     print "generating", html_file, "..."
     call("cat " + "../bookcopyright/copyright.html " + " ".join(cleaned_html) + " > " + html_file, shell=True)
     try:

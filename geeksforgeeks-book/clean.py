@@ -25,10 +25,6 @@ def insert_content(doc, html_doc, insert_string, insert_type):
 
 def clean(file_name, directory="."):
     basename = os.path.basename(file_name)
-    cleaned_file = os.path.splitext(basename)[0] + "_cleaned.html"
-    # don't clean files that already have been cleaned
-    if os.path.isfile(cleaned_file):
-        return
     content = codecs.open(file_name, "r", 'utf-8').read()
 
     head_pos = content.find('<head>')
@@ -43,6 +39,12 @@ def clean(file_name, directory="."):
     html_parser = html.HTMLParser(encoding="utf-8")
     html_doc = html.fromstring(content, parser=html_parser)
     head_doc = html_doc.find('head')
+    published_time = head_doc.cssselect('meta[property="article:published_time"]')[0].get('content')[:-6]
+    print published_time
+    cleaned_file = os.path.splitext(basename)[0] + "_" + published_time + "_cleaned.html"
+        # don't clean files that already have been cleaned
+    if os.path.isfile(cleaned_file):
+        return
     source_url = head_doc.cssselect('meta[property="og:url"]')[0].get('content')
     title = html_doc.find('.//title').text_content()
 
