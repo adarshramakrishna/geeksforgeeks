@@ -1,21 +1,21 @@
 # Geeksforgeeks as Books
 
-## Note
-
-The site [Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized itself for mobile devices. This project started when the old geeksforgeeks site was clumsy.
-
-## Books
-To get the latest version of the books, see the [latest release][12].
-
-They are also in the `goodies` directory. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
+Books will be updated regularly to keep up with [Geeksforgeeks.org](http://geeksforgeeks.org).
 
 ## App
 
-You can also read up on [GeekReader](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8) on your iOS devices. Be sure to send your feedback about the app to geekreader.app@gmail.com to make it better. This app just got started. Features and wishes are welcome.
+There is an App now! [Geeksforgeeks Reader](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8) makes it easier to read on your iOS devices. This app just got started. Feature requests are welcome.
+
+## Note
+
+[Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized for mobile devices. This project started when the old geeksforgeeks site was clumsy.
+
+## Books
+To get the latest version of the books, look under the directory called goodies. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
 
 ## Tools
 
-If you want to generate books yourself. Here is an incomplete guide.
+If you want to generate the books yourself. Here is an incomplete guide.
 
 ### Requirements
 
@@ -47,7 +47,7 @@ If you want to generate books yourself. Here is an incomplete guide.
 Style the books better. Those books are essentially styled via `css`. Therefore styling `<pre>` and `<code>`, for instance, will style the code of the `epub` books.
 
 ### Generate pdf format books
-Convert `gif` images to `png` and use them so `pandoc` can handle them.
+Convert `gif` images to `png` and use them instead so `pandoc` can handle them.
 
 ## Contribute
 
@@ -76,11 +76,13 @@ license [here][8].
 
 Jing Zhou, gnijuohz at gmail.com.
 
+## Contributors
+
+@lebshah
+
 ## Issues
 
-You can report issue right here or send me an email about it.
-
-如发现任何问题，欢迎骚扰 ;)
+You can report issue right here.
 
 
 [1]:http://www.geeksforgeeks.org/
