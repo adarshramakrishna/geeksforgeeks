@@ -1,5 +1,10 @@
 # Geeksforgeeks as Books
 
+
+## Get the books
+
+Complete books are located in the `book` [branch](https://github.com/gnijuohz/geeksforgeeks-as-books/tree/book).
+
 Books will be updated regularly to keep up with [Geeksforgeeks.org](http://geeksforgeeks.org).
 
 ## App
