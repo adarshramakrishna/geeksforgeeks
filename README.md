@@ -79,7 +79,9 @@ license [here][8].
 
 ## Authors
 
-Jing Zhou, gnijuohz at gmail.com.
+Jing Zhou, gnijuohz at gmail.com.  
+[LinkedIn](https://www.linkedin.com/in/gnijuohz)  
+[Twitter](https://twitter.com/gnijuohz)
 
 ## Contributors
 
