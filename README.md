@@ -1,22 +1,28 @@
 # Geeksforgeeks as Books
 
 
-## Get the books
+## Note
 
 Complete books are located in the `book` [branch](https://github.com/gnijuohz/geeksforgeeks-as-books/tree/book).
 
 Books will be updated regularly to keep up with [Geeksforgeeks.org](http://geeksforgeeks.org).
 
+[Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized for mobile devices. This project started when the old geeksforgeeks site was clumsy.
+
+## Books
+
+*New*: Complete books are located in the `book` [branch](https://github.com/gnijuohz/geeksforgeeks-as-books/tree/book)
+
+**Note**: Books in the master branch is not actively updated and maintained anymore. Instead get the books in the `book` branch. The `book` branch will be merged into the `master` branch in the future. The code in the master branch was hacked together when I just got to know `Scrapy` and `lxml`. So fair warning, it's not pretty if you decide to take a look at the code.
+
+*Old*: To get the latest version of the books, look under the directory called goodies. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
+
+
 ## App
 
 There is an App now! [Geeksforgeeks Reader](https://itunes.apple.com/us/app/geekreader/id991254978?ls=1&mt=8) makes it easier to read on your iOS devices. This app just got started. Feature requests are welcome.
 
-## Note
-
-[Geeksforgeeks.org](http://geeksforgeeks.org) has (finally) updated its user interface lately and optimized for mobile devices. This project started when the old geeksforgeeks site was clumsy.
-
-## Books
-To get the latest version of the books, look under the directory called goodies. Each book under `geeksforgeeks-books` is generated with articles under a tag/category on [geeksforgeeks.org][1]. The book under `leetcode-book` is generated from the articles on [leetcode.com](http://leetcode.com/).
+For people who use leetcode, there is an app as well: [Leetcoder](https://itunes.apple.com/us/app/leetcoder/id1069760709?mt=8).
 
 ## Tools
 
